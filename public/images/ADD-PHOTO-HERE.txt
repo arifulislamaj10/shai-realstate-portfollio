@@ -1,0 +1,14 @@
+HOW TO ADD SHAN SHAI'S PROFILE PHOTO
+=====================================
+
+Facebook blocks automatic photo download, so please add her photo manually:
+
+1. Open: https://www.facebook.com/shai.dane
+2. Click on her profile picture to view it full size
+3. Right-click the photo → "Save image as..."
+4. Save the file as: shan-shai.jpg
+5. Put it in this folder: shan-shai-website\images\
+
+The website will automatically show her photo in the Hero and About sections.
+
+Supported formats: .jpg, .jpeg, .png (rename to shan-shai.jpg)
