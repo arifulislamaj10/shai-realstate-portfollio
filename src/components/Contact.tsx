@@ -1,13 +1,25 @@
 "use client";
 
 import Link from "next/link";
-import { FormEvent, useState } from "react";
+import { FormEvent, useEffect, useState } from "react";
 import Reveal from "./Reveal";
-import { buildContactMessage, getWhatsAppUrl, siteConfig } from "@/data/site";
+import { availableUnits, buildContactMessage, getWhatsAppUrl, siteConfig } from "@/data/site";
 
 export default function Contact() {
   const [submitted, setSubmitted] = useState(false);
+  const [message, setMessage] = useState("");
   const whatsappUrl = getWhatsAppUrl();
+
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    const unitId = params.get("unit");
+    if (!unitId) return;
+
+    const unit = availableUnits.find((item) => item.id === unitId);
+    if (unit) {
+      setMessage(`Hi Shan, I'm interested in the ${unit.name} (${unit.type}).`);
+    }
+  }, []);
 
   function handleSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
@@ -18,7 +30,7 @@ export default function Contact() {
       email: String(data.get("email") || "").trim(),
       phone: String(data.get("phone") || "").trim(),
       interest: String(data.get("interest") || ""),
-      message: String(data.get("message") || "").trim(),
+      message: String(data.get("message") || message).trim(),
     };
 
     const text = buildContactMessage(fields);
@@ -52,6 +64,7 @@ export default function Contact() {
     }
 
     form.reset();
+    setMessage("");
     setSubmitted(true);
     setTimeout(() => setSubmitted(false), 3000);
   }
@@ -64,7 +77,7 @@ export default function Contact() {
             <span className="section-label">Contact</span>
             <h2 className="section-title">Send a Message</h2>
             <p className="contact-desc">
-              May question about Hamana Homes? Message me on Facebook or WhatsApp.
+              Have a question about Hamana Homes? Message me on Facebook or WhatsApp.
             </p>
 
             <div className="contact-channels">
@@ -192,6 +205,8 @@ export default function Contact() {
                   name="message"
                   rows={4}
                   placeholder="What do you want to ask?"
+                  value={message}
+                  onChange={(e) => setMessage(e.target.value)}
                   required
                 />
               </div>

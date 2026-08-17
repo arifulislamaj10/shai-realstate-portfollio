@@ -60,10 +60,12 @@ export default function Services() {
                   />
                 </div>
                 <div className="service-card-body">
-                  <div className="service-icon">
-                    <ServiceIcon type={service.icon} />
+                  <div className="service-card-heading">
+                    <div className="service-icon">
+                      <ServiceIcon type={service.icon} />
+                    </div>
+                    <h3>{service.title}</h3>
                   </div>
-                  <h3>{service.title}</h3>
                   <p>{service.description}</p>
                 </div>
               </article>

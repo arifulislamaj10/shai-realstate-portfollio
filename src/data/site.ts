@@ -113,6 +113,117 @@ export const videoBlogPosts = [
   },
 ];
 
+export const availableUnits = [
+  {
+    id: "nanea",
+    name: "Nanea",
+    type: "Single Attached",
+    beds: "2–3 BR",
+    priceNote: "From ₱2.48M · ask for updated price",
+    image: "/images/nanea.jpg",
+  },
+  {
+    id: "meana",
+    name: "Meana",
+    type: "Duplex",
+    beds: "2–3 BR",
+    priceNote: "From ₱2.95M · ask for updated price",
+    image: "/images/meana.jpg",
+  },
+  {
+    id: "onea",
+    name: "Onea",
+    type: "Duplex Deluxe",
+    beds: "3 BR",
+    priceNote: "From ₱3.35M · ask for updated price",
+    image: "/images/onea.jpg",
+  },
+  {
+    id: "kanea",
+    name: "Kanea",
+    type: "Townhouse",
+    beds: "2–3 BR",
+    priceNote: "From ₱2.75M · ask for updated price",
+    image: "/images/kanea.jpg",
+  },
+];
+
+export const howToBuySteps = [
+  {
+    step: "1",
+    title: "Message Shan",
+    description: "Send a message on Facebook or WhatsApp. Say which unit you like or ask what is available.",
+  },
+  {
+    step: "2",
+    title: "Free site visit",
+    description: "Schedule a trip to Hamana Homes Magalang. You can see the model units and the community.",
+  },
+  {
+    step: "3",
+    title: "Choose your unit",
+    description: "Pick the model that fits your budget. Shan will explain floor plan, price, and payment options.",
+  },
+  {
+    step: "4",
+    title: "Reserve",
+    description: "Submit requirements and reservation fee. Shan will guide you with the paperwork.",
+  },
+  {
+    step: "5",
+    title: "Loan processing",
+    description: "Pag-IBIG, bank, or in-house financing. Shan can help compute monthly payment and assist with documents.",
+  },
+  {
+    step: "6",
+    title: "Turnover",
+    description: "Construction updates until your unit is ready. Shan stays with you until you get your keys.",
+  },
+];
+
+export const faqItems = [
+  {
+    question: "How much is the down payment?",
+    answer:
+      "It depends on the unit and payment scheme. Message Shan for the exact amount — she can compute based on the model you choose.",
+  },
+  {
+    question: "Can I use Pag-IBIG or a bank loan?",
+    answer:
+      "Yes. Hamana Homes accepts Pag-IBIG, bank financing, and in-house options. Shan can help check what you qualify for.",
+  },
+  {
+    question: "Is the site visit free?",
+    answer:
+      "Yes. Shan can arrange a free site trip to Hamana Homes Magalang so you can see the units and community in person.",
+  },
+  {
+    question: "How do I reserve a unit?",
+    answer:
+      "Message Shan first. She will list the requirements, reservation fee, and steps. Reservation goes through the accredited agent process.",
+  },
+  {
+    question: "I'm an OFW — can I buy while I'm abroad?",
+    answer:
+      "Yes. Many OFW clients work with Shan remotely. She sends updates, coordinates documents, and keeps you informed until turnover.",
+  },
+  {
+    question: "Where is Hamana Homes located?",
+    answer:
+      "Magalang, Pampanga — near Clark. Good for families working around Clark, Angeles, and nearby areas.",
+  },
+  {
+    question: "Why message Shan instead of going straight to the office?",
+    answer:
+      "Shan will register your inquiry, guide you through the process, and assist from site visit to key turnover. Message her first for faster help.",
+  },
+  {
+    question: "Are there still available units?",
+    answer:
+      "Availability changes often. Message Shan for current units, pricing, and promos — she has the latest from Hamana Homes.",
+  },
+];
+
 export const portfolioItems = [
   {
     id: "hamana-master",
@@ -168,7 +279,7 @@ export const portfolioFilters = [
 export const testimonials = [
   {
     quote:
-      "First time buyer kami and Shan was very patient. From reservation hanggang turnover, maayos lahat. Happy kami sa Nanea unit namin.",
+      "We were first-time buyers and Shan was very patient. From reservation to turnover, everything went smoothly. We're happy with our Nanea unit.",
     clientName: "Client · Nanea",
     unit: "Nanea Single Attached",
     location: "Magalang, Pampanga",
@@ -177,7 +288,7 @@ export const testimonials = [
   },
   {
     quote:
-      "She arranged our site visit and explained everything step by step. Smooth yung process ng Meana duplex namin. Recommended siya.",
+      "She arranged our site visit and explained everything step by step. Our Meana duplex process was smooth. Highly recommended.",
     clientName: "Client · Meana",
     unit: "Meana Duplex",
     location: "Magalang, Pampanga",
@@ -186,7 +297,7 @@ export const testimonials = [
   },
   {
     quote:
-      "OFW ako so kailangan ko ng someone na mapagkakatiwalaan. Shan updated us regularly until nakuha namin ang Onea unit. Salamat!",
+      "I'm an OFW and needed someone I could trust back home. Shan updated us regularly until we got our Onea unit. Thank you!",
     clientName: "Client · Onea",
     unit: "Onea Duplex Deluxe",
     location: "Clark area, Pampanga",
@@ -195,7 +306,7 @@ export const testimonials = [
   },
   {
     quote:
-      "Tinulungan kami ni Shan sa Pag-IBIG loan for our Kanea townhouse. Andito siya until nakuha namin ang keys. Satisfied kami.",
+      "Shan helped us with our Pag-IBIG loan for our Kanea townhouse. She stayed with us until we got our keys. Very satisfied.",
     clientName: "Client · Kanea",
     unit: "Kanea Townhouse",
     location: "Magalang, Pampanga",
@@ -208,13 +319,15 @@ export const navLinks = [
   { href: "#home", label: "Home" },
   { href: "#about", label: "About" },
   { href: "#services", label: "Services" },
+  { href: "#units", label: "Units" },
   { href: "#portfolio", label: "Portfolio" },
   { href: "#videos", label: "Videos" },
+  { href: "#faq", label: "FAQ" },
   { href: "#contact", label: "Contact" },
 ];
 
 export const defaultWhatsAppMessage =
-  "Hi Shan, ask ko lang about Hamana Homes.";
+  "Hi Shan, I have a question about Hamana Homes.";
 
 export function getWhatsAppDigits(): string {
   const raw = siteConfig.whatsapp || siteConfig.phone;
