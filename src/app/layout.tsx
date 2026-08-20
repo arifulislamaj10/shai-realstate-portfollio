@@ -11,9 +11,9 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  title: "Rish | Hamana Homes Agent · Magalang, Pampanga",
+  title: "Rish | Hamana Homes Agent, Magalang, Pampanga",
   description:
-    "Rish — in-house agent for Hamana Homes near Clark. 5 deals in 3 months. Site visits, virtual tripping, reservations, and bank loan help.",
+    "Rish, in-house agent for Hamana Homes near Clark. 5 deals in 3 months. Site visits, reservations, bank loans, and turnover.",
   keywords: [
     "Rish",
     "Hamana Homes",
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     title: "Rish | Hamana Homes Agent",
-    description: "In-house agent for Hamana Homes in Magalang, Pampanga — near Clark.",
+    description: "In-house agent for Hamana Homes in Magalang, Pampanga, near Clark.",
     type: "website",
     images: [{ url: siteConfig.profilePhoto, alt: `${siteConfig.name}, ${siteConfig.title}` }],
   },

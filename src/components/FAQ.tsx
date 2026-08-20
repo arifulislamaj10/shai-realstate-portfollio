@@ -14,7 +14,7 @@ export default function FAQ() {
         <Reveal className="section-header">
           <span className="section-label">FAQ</span>
           <h2 className="section-title">Common Questions</h2>
-          <p className="section-desc">Quick answers — message {siteConfig.name} if you need more detail</p>
+          <p className="section-desc">Common questions. Message {siteConfig.name} if you need more info.</p>
         </Reveal>
 
         <div className="faq-list">

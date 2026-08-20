@@ -21,8 +21,8 @@ export default function Testimonials() {
       <div className="container">
         <Reveal className="section-header">
           <span className="section-label">Client Stories</span>
-          <h2 className="section-title">What Clients Say</h2>
-          <p className="section-desc">From buyers I&apos;ve worked with</p>
+          <h2 className="section-title">Turnover Photos</h2>
+          <p className="section-desc">From buyers I have worked with</p>
         </Reveal>
 
         <Reveal className="client-stories-carousel">
@@ -38,7 +38,7 @@ export default function Testimonials() {
                       <div className="client-story-frame-inner">
                         <Image
                           src={item.image}
-                          alt={`${item.clientName} · ${item.unit}`}
+                          alt={`${item.clientName}, ${item.unit}`}
                           width={900}
                           height={600}
                           className="client-story-image"
@@ -53,7 +53,7 @@ export default function Testimonials() {
                     <div className="client-story-meta">
                       <strong className="client-story-name">{item.clientName}</strong>
                       <span className="client-story-unit">
-                        {item.unit} · {item.location}
+                        {item.unit}, {item.location}
                       </span>
                       <span className="client-story-price">
                         Home price: <em>{item.price}</em>

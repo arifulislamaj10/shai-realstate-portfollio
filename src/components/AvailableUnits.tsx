@@ -11,7 +11,7 @@ export default function AvailableUnits() {
           <span className="section-label">Unit Models</span>
           <h2 className="section-title">Available at Hamana Homes</h2>
           <p className="section-desc">
-            Nanea, Meana, Onea, and Kanea — message {siteConfig.name} for current price and availability
+            Nanea, Meana, Onea, and Kanea. Message {siteConfig.name} for price and availability.
           </p>
         </Reveal>
 

@@ -43,7 +43,7 @@ export default function Services() {
           <span className="section-label">What I Offer</span>
           <h2 className="section-title">How I Can Help</h2>
           <p className="section-desc">
-            Hamana Homes in Magalang — developed by Pacifica Homes
+            Hamana Homes in Magalang, by Pacifica Homes
           </p>
         </Reveal>
         <div className="services-grid">

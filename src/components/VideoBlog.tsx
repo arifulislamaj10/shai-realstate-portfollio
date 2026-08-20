@@ -19,7 +19,7 @@ export default function VideoBlog() {
           <span className="section-label">Video Blog</span>
           <h2 className="section-title">Site Videos</h2>
           <p className="section-desc">
-            Official Hamana Homes videos — site tour, units, and community
+            Hamana Homes videos. Site tour, units, and community.
           </p>
         </Reveal>
 

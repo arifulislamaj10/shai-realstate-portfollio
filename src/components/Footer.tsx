@@ -43,7 +43,7 @@ export default function Footer() {
       </div>
       <div className="footer-bottom">
         <p>
-          &copy; 2026 {siteConfig.name}. Hamana Homes agent · Magalang, Pampanga.{" "}
+          &copy; 2026 {siteConfig.name}. Hamana Homes agent, Magalang, Pampanga.{" "}
           <Link href={siteConfig.hamanaWebsite} target="_blank" rel="noopener noreferrer">
             hamanahomes.com.ph
           </Link>

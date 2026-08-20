@@ -18,10 +18,10 @@ export default function Portfolio() {
     <section className="portfolio section" id="portfolio">
       <div className="container">
         <Reveal className="section-header">
-          <span className="section-label">Success Stories</span>
-          <h2 className="section-title">Closed Deals</h2>
+          <span className="section-label">Closed Deals</span>
+          <h2 className="section-title">Recent Turnovers</h2>
           <p className="section-desc">
-            The Hamana community and 5 successful turnovers in the last 3 months
+            Hamana Homes community and 5 deals closed in the last 3 months
           </p>
         </Reveal>
 
