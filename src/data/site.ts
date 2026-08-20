@@ -453,17 +453,19 @@ export const portfolioFilters = [
 
 export const testimonials = [
   {
+    id: "meana-1",
     quote:
-      "We reserved our Nanea unit with Rish. She was very patient and clear from site visit to turnover. We are very satisfied and happy with our new home in Magalang.",
-    clientName: "Nanea buyer",
-    unit: "Nanea Single Attached",
+      "We bought our Meana duplex with Rish. She was patient and clear from site visit to turnover. Very satisfied with our new home in Magalang.",
+    clientName: "Meana buyer",
+    unit: "Meana Duplex",
     location: "Magalang, Pampanga",
-    price: "₱6.5M to ₱7.5M",
+    price: "₱4.6M to ₱5.3M",
     image: "/images/deal-1.jpeg",
   },
   {
+    id: "meana-2",
     quote:
-      "Rish arranged our site visit and explained every step for our Meana duplex. The whole process was smooth and we are satisfied with the service.",
+      "Rish arranged our site visit and explained every step for our Meana unit. The whole process was smooth and we are satisfied with the service.",
     clientName: "Meana buyer",
     unit: "Meana Duplex",
     location: "Magalang, Pampanga",
@@ -471,30 +473,33 @@ export const testimonials = [
     image: "/images/deal-2.jpeg",
   },
   {
+    id: "meana-3",
     quote:
-      "I am an OFW and Rish kept us updated the whole time. Virtual updates helped a lot until we got our Onea unit. Very satisfied with her work.",
-    clientName: "Onea buyer",
-    unit: "Onea Duplex Deluxe",
-    location: "Pampanga",
-    price: "₱5.8M to ₱6.8M",
+      "I am an OFW and Rish kept us updated the whole time. Virtual updates helped a lot until we got our Meana unit. Very satisfied with her work.",
+    clientName: "Meana buyer",
+    unit: "Meana Duplex",
+    location: "Magalang, Pampanga",
+    price: "₱4.6M to ₱5.3M",
     image: "/images/deal-3.jpeg",
   },
   {
+    id: "meana-4",
     quote:
-      "Rish helped us with Pag-IBIG for our Kanea townhouse. She stayed with us until we got our keys. We are satisfied and highly recommend her.",
-    clientName: "Kanea buyer",
-    unit: "Kanea Townhouse",
+      "Rish helped us with bank financing for our Meana duplex. She stayed with us until we got our keys. Satisfied and highly recommend her.",
+    clientName: "Meana buyer",
+    unit: "Meana Duplex",
     location: "Magalang, Pampanga",
-    price: "₱3.4M to ₱4.2M",
+    price: "₱4.6M to ₱5.3M",
     image: "/images/deal-4.jpeg",
   },
   {
+    id: "meana-5",
     quote:
-      "From reservation to turnover, Rish made everything easy. Paylite and flexible terms helped our budget. Satisfied client and happy homeowner.",
-    clientName: "Hamana Homes buyer",
-    unit: "Hamana Homes unit",
+      "From reservation to turnover, Rish made everything easy. We purchased our Meana unit in cash. Satisfied client and happy homeowner.",
+    clientName: "Meana buyer",
+    unit: "Meana Duplex",
     location: "Magalang, Pampanga",
-    price: "₱25,000 reservation",
+    price: "Cash purchase",
     image: "/images/deal-5.jpeg",
   },
 ];

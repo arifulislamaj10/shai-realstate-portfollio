@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import Reveal from "./Reveal";
-import { siteConfig, testimonials } from "@/data/site";
+import { testimonials } from "@/data/site";
 
 export default function Testimonials() {
   const [index, setIndex] = useState(0);
@@ -32,7 +32,7 @@ export default function Testimonials() {
               style={{ transform: `translateX(-${index * 100}%)` }}
             >
               {testimonials.map((item) => (
-                <article key={item.unit} className="client-story">
+                <article key={item.id} className="client-story">
                   <div className="client-story-photo">
                     <div className="client-story-frame">
                       <Image
@@ -48,8 +48,8 @@ export default function Testimonials() {
 
                   <div className="client-story-content">
                     <div className="client-story-header">
-                      <strong>{siteConfig.name}</strong>
-                      <span>{item.clientName}</span>
+                      <strong>{item.clientName}</strong>
+                      <span>{item.unit}</span>
                     </div>
                     <p className="client-story-quote">{item.quote}</p>
                     <div className="client-story-meta">
@@ -67,7 +67,7 @@ export default function Testimonials() {
           <div className="client-stories-dots">
             {testimonials.map((item, i) => (
               <button
-                key={item.unit}
+                key={item.id}
                 type="button"
                 className={`client-stories-dot ${index === i ? "active" : ""}`}
                 aria-label={`Go to story ${i + 1}`}
