@@ -59,25 +59,16 @@ export const aboutPhdcContent = {
   pageSubtitle: "Built by a Trusted Legacy. Designed for the Future.",
   sections: [
     {
-      id: "about-phdc",
-      title: "About PHDC",
-      image: {
-        src: "/images/parent-company/pacifica-homes.jpg",
-        alt: "Pacifica Homes Development Corporation",
-      },
-      paragraphs: [
-        "Pacifica Homes Development Corporation (PHDC) leads the sale, construction, and delivery of premium affordable homes in the Philippines. Together with chairman Mr. Ted Po, president Mr. Leo Po, and their brothers on the board, PHDC aims to deliver superior quality homes with mid-market features at low-cost housing prices.",
-        "PHDC uses innovative construction technology to build better homes that last. The company focuses on premium house features and better value compared to other developers in its category.",
-        "Generous green open spaces, premium amenities, and wider road networks help residents move in and out of the community faster. That balance of urban convenience and suburban living is what PHDC aims to give every homeowner.",
-      ],
-    },
-    {
       id: "about-company",
       title: "Century Pacific Group",
+      image: {
+        src: "/images/parent-company/century-pacific.jpg",
+        alt: "Century Pacific Group brands",
+      },
       paragraphs: [
+        "Century Pacific Group Inc. is the parent company. It is a diversified group in food manufacturing, distribution, food retail, and real estate development.",
         "The Po family is behind some of the Philippines' well-known brands, including Century Tuna, Birch Tree, Shakey's, Peri-Peri, Potato Corner, and more.",
         "With a strong heritage in building trusted businesses, Century Pacific Group brings the same commitment to quality, value, and long-term growth to the communities it helps build.",
-        "Century Pacific Group is a diversified group in food manufacturing, distribution, food retail, and real estate development.",
       ],
       images: [
         {
@@ -91,6 +82,20 @@ export const aboutPhdcContent = {
       ],
     },
     {
+      id: "about-phdc",
+      title: "PHDC",
+      image: {
+        src: "/images/parent-company/pacifica-homes.jpg",
+        alt: "Pacifica Homes Development Corporation",
+      },
+      paragraphs: [
+        "Pacifica Homes Development Corporation (PHDC) is the real estate development arm under Century Pacific Group Inc. PHDC leads the sale, construction, and delivery of premium affordable homes in the Philippines.",
+        "Together with chairman Mr. Ted Po, president Mr. Leo Po, and their brothers on the board, PHDC aims to deliver superior quality homes with mid-market features at low-cost housing prices.",
+        "PHDC uses innovative construction technology to build better homes that last. The company focuses on premium house features and better value compared to other developers in its category.",
+        "Generous green open spaces, premium amenities, and wider road networks help residents move in and out of the community faster. That balance of urban convenience and suburban living is what PHDC aims to give every homeowner.",
+      ],
+    },
+    {
       id: "about-hamana",
       title: "Hamana Homes",
       image: {
@@ -98,7 +103,7 @@ export const aboutPhdcContent = {
         alt: "Century Pacific Group, PHDC, and Hamana Homes 15-hectare development",
       },
       paragraphs: [
-        "Hamana Homes is the flagship residential project of PHDC, a developer under the Century Pacific Group Inc., a company owned by the Po family.",
+        "Hamana Homes is the flagship residential project of PHDC, a developer under Century Pacific Group Inc., a company owned by the Po family.",
         "Hamana Homes is a 15-hectare modern Asian-inspired residential community designed to provide families with a comfortable, meaningful, and future-ready place to call home.",
         "The name Hamana is a coined word inspired by the idea of \"homes that will stand the test of time.\"",
         "The project is planned with commercial areas that will include a transport hub for residents. Open spaces, landscaping, community facilities, path walks, and road networks make up almost 40% of the development.",
