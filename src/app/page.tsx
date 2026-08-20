@@ -10,6 +10,7 @@ import HowToBuy from "@/components/HowToBuy";
 import Location from "@/components/Location";
 import Nav from "@/components/Nav";
 import Portfolio from "@/components/Portfolio";
+import SampleComputation from "@/components/SampleComputation";
 import Services from "@/components/Services";
 import SiteVisitCta from "@/components/SiteVisitCta";
 import Testimonials from "@/components/Testimonials";
@@ -24,6 +25,7 @@ export default function Home() {
         <About />
         <Services />
         <AvailableUnits />
+        <SampleComputation />
         <Location />
         <Amenities />
         <SiteVisitCta />

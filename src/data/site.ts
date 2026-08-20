@@ -194,6 +194,27 @@ export const amenitiesContent = {
   ],
 };
 
+export const sampleComputationContent = {
+  label: "Sample Computation",
+  title: "Sample Payment Breakdown",
+  intro:
+    "Sample payment breakdowns for Hamana Homes units. Message Rish if you want your own computation.",
+  items: [
+    {
+      title: "Meana Pre Selling 5/95",
+      image: "/images/WhatsApp Image 2026-08-20 at 11.39.15 AM.jpeg",
+    },
+    {
+      title: "Nanea Single Attached 5% DP",
+      image: "/images/WhatsApp Image 2026-08-20 at 11.39.01 AM.jpeg",
+    },
+    {
+      title: "Kanea Inner 5% DP",
+      image: "/images/WhatsApp Image 2026-08-20 at 11.38.48 AM.jpeg",
+    },
+  ],
+};
+
 export const heroCarouselSlides = [
   { image: "/images/hamana-hero.jpg", title: "Hamana Homes Magalang", subtitle: "Magalang, Pampanga" },
   { image: "/images/hamana-banner2.jpg", title: "Hamana Community", subtitle: "Near Clark" },

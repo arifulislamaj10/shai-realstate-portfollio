@@ -901,6 +901,153 @@ a {
   text-underline-offset: 2px;
 }
 
+/* Sample Computation */
+.sample-computation {
+  background: linear-gradient(180deg, #f0ebe3 0%, var(--color-bg) 100%);
+}
+
+.sample-computation-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.sample-computation-grid .reveal {
+  display: contents;
+}
+
+.sample-computation-card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border: 1px solid var(--color-border);
+  border-top: 3px solid var(--color-primary);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  background: var(--color-bg-card);
+  box-shadow: var(--shadow-sm);
+  cursor: pointer;
+  text-align: left;
+  transition: var(--transition);
+}
+
+.sample-computation-card:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-3px);
+  border-color: var(--color-primary);
+}
+
+.sample-computation-thumb {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 260px;
+  padding: 16px;
+  overflow: hidden;
+  background: linear-gradient(
+    180deg,
+    var(--color-primary-light) 0%,
+    var(--color-bg) 100%
+  );
+}
+
+.sample-computation-image {
+  width: 100%;
+  height: auto;
+  max-height: 320px;
+  object-fit: contain;
+  object-position: center;
+  display: block;
+}
+
+.sample-computation-zoom {
+  position: absolute;
+  left: 50%;
+  bottom: 10px;
+  transform: translateX(-50%);
+  padding: 8px 18px;
+  background: var(--color-primary);
+  color: var(--color-bg-dark);
+  border: 2px solid var(--color-primary);
+  border-radius: 50px;
+  font-size: 0.72rem;
+  font-weight: 600;
+  pointer-events: none;
+}
+
+.sample-computation-caption {
+  margin: 0;
+  padding: 14px 12px 16px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--color-text);
+  line-height: 1.35;
+  text-align: center;
+  background: var(--color-bg-card);
+}
+
+.sample-lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 2000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.sample-lightbox-backdrop {
+  position: absolute;
+  inset: 0;
+  border: 0;
+  background: rgba(26, 26, 46, 0.92);
+  cursor: zoom-out;
+}
+
+.sample-lightbox-content {
+  position: relative;
+  z-index: 1;
+  width: min(100%, 920px);
+  max-height: calc(100vh - 40px);
+  overflow: auto;
+  border-radius: var(--radius-lg);
+  background: var(--color-bg-card);
+  padding: 20px;
+  box-shadow: var(--shadow-lg);
+}
+
+.sample-lightbox-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.sample-lightbox-title {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.sample-lightbox-close {
+  flex-shrink: 0;
+  padding: 10px 20px;
+  font-size: 0.88rem;
+}
+
+.sample-lightbox-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: var(--radius);
+  background: var(--color-bg);
+}
+
 /* Location */
 .location {
   background: linear-gradient(180deg, #f0ebe3 0%, var(--color-bg) 100%);
@@ -1832,8 +1979,8 @@ a {
 }
 
 .contact-link-icon--email {
-  background: rgba(196, 92, 38, 0.12);
-  color: var(--color-primary);
+  background: rgba(201, 169, 98, 0.15);
+  color: var(--color-primary-dark);
 }
 
 .contact-details {
@@ -1984,7 +2131,7 @@ a.contact-link:hover {
   padding: 0;
   border: 0;
   border-radius: 50%;
-  color: white;
+  color: var(--color-bg-dark);
   background: var(--color-primary);
   box-shadow: 0 8px 28px rgba(26, 26, 46, 0.28);
   transition: var(--transition);
@@ -1999,11 +2146,13 @@ a.contact-link:hover {
 
 .floating-contact-toggle:hover {
   transform: translateY(-2px);
+  background: var(--color-primary-dark);
   box-shadow: 0 12px 32px rgba(26, 26, 46, 0.34);
 }
 
 .floating-contact--open .floating-contact-toggle {
   background: var(--color-bg-dark);
+  color: var(--color-text-light);
 }
 
 .contact-form {
@@ -2259,6 +2408,11 @@ a.contact-link:hover {
 
   .amenities-grid {
     grid-template-columns: 1fr;
+  }
+
+  .sample-computation-grid {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 640px;
   }
 }
 
@@ -2594,6 +2748,12 @@ a.contact-link:hover {
   .video-blog-grid {
     grid-template-columns: 1fr;
     gap: 20px;
+  }
+
+  .sample-computation-grid {
+    grid-template-columns: 1fr;
+    max-width: 360px;
+    margin: 0 auto;
   }
 
   .client-stories-carousel {
