@@ -631,6 +631,19 @@ a {
   color: var(--color-text);
 }
 
+.about-subheading {
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--color-text);
+  margin: 28px 0 14px;
+  line-height: 1.35;
+}
+
+.about-subheading:first-of-type {
+  margin-top: 8px;
+}
+
 .about-highlights {
   list-style: none;
   margin: 32px 0;
@@ -1713,6 +1726,48 @@ a {
   align-items: start;
 }
 
+.contact-panel {
+  max-width: 760px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contact-panel .section-label,
+.contact-panel .section-title,
+.contact-panel .contact-desc {
+  text-align: center;
+}
+
+.contact-panel .contact-desc {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contact-unit-note {
+  margin-bottom: 28px;
+  padding: 20px;
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+}
+
+.contact-unit-note p {
+  margin-bottom: 16px;
+  color: var(--color-text);
+  font-size: 0.98rem;
+}
+
+.contact-panel .contact-channels {
+  justify-content: center;
+}
+
+.contact-panel .contact-details {
+  align-items: center;
+  text-align: left;
+  max-width: 420px;
+  margin: 0 auto;
+}
+
 .contact-desc {
   color: var(--color-text-muted);
   font-size: 1.05rem;
@@ -1769,6 +1824,16 @@ a {
 .contact-link-icon--facebook {
   background: rgba(24, 119, 242, 0.12);
   color: #1877f2;
+}
+
+.contact-link-icon--phone {
+  background: rgba(26, 26, 46, 0.08);
+  color: var(--color-text);
+}
+
+.contact-link-icon--email {
+  background: rgba(196, 92, 38, 0.12);
+  color: var(--color-primary);
 }
 
 .contact-details {
@@ -1837,40 +1902,108 @@ a.contact-link:hover {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  gap: 10px;
+  gap: 12px;
 }
 
-.floating-contact-btn {
+.floating-contact-backdrop {
+  position: fixed;
+  inset: 0;
+  border: 0;
+  background: transparent;
+  cursor: default;
+  z-index: -1;
+}
+
+.floating-contact-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(8px);
+  transition: opacity 0.2s ease, transform 0.2s ease, visibility 0.2s;
+  pointer-events: none;
+}
+
+.floating-contact--open .floating-contact-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.floating-contact-option {
   display: inline-flex;
   align-items: center;
-  justify-content: center;
-  width: 52px;
-  height: 52px;
-  padding: 0;
-  border-radius: 50%;
+  gap: 10px;
+  min-width: 210px;
+  padding: 12px 16px;
+  border-radius: 999px;
   color: white;
   text-decoration: none;
-  box-shadow: 0 8px 28px rgba(26, 26, 46, 0.28);
+  font-size: 0.9rem;
+  font-weight: 600;
+  box-shadow: 0 8px 28px rgba(26, 26, 46, 0.24);
   transition: var(--transition);
 }
 
-.floating-contact-btn svg {
-  width: 24px;
-  height: 24px;
+.floating-contact-option:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 32px rgba(26, 26, 46, 0.3);
+}
+
+.floating-contact-option-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
   flex-shrink: 0;
 }
 
-.floating-contact-btn:hover {
+.floating-contact-option-icon svg {
+  width: 18px;
+  height: 18px;
+}
+
+.floating-contact-option--whatsapp {
+  background: #25d366;
+}
+
+.floating-contact-option--facebook {
+  background: #1877f2;
+}
+
+.floating-contact-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  color: white;
+  background: var(--color-primary);
+  box-shadow: 0 8px 28px rgba(26, 26, 46, 0.28);
+  transition: var(--transition);
+  cursor: pointer;
+}
+
+.floating-contact-toggle svg {
+  width: 26px;
+  height: 26px;
+  flex-shrink: 0;
+}
+
+.floating-contact-toggle:hover {
   transform: translateY(-2px);
   box-shadow: 0 12px 32px rgba(26, 26, 46, 0.34);
 }
 
-.floating-contact-btn--facebook {
-  background: #1877f2;
-}
-
-.floating-contact-btn--whatsapp {
-  background: #25d366;
+.floating-contact--open .floating-contact-toggle {
+  background: var(--color-bg-dark);
 }
 
 .contact-form {

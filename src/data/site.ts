@@ -3,11 +3,20 @@ export const siteConfig = {
   title: "In-house Real Estate Agent",
   company: "Hamana Homes",
   location: "Magalang, Pampanga, near Clark",
-  facebook: "https://www.facebook.com/shai.dane",
-  facebookHandle: "@shai.dane",
-  /** Display format, e.g. "+63 917 123 4567" */
-  phone: "",
-  /** WhatsApp digits without + (e.g. "639171234567"). Falls back to phone if empty. */
+  phone: "09948504295",
+  email: "hamanarish02@gmail.com",
+  facebook: "https://www.facebook.com/share/1MXLosivyL/",
+  facebookPages: [
+    {
+      url: "https://www.facebook.com/share/1MXLosivyL/",
+      label: "Personal Facebook",
+    },
+    {
+      url: "https://www.facebook.com/share/1DU8EcYDcf/",
+      label: "Hamana Homes Facebook",
+    },
+  ],
+  /** WhatsApp digits without +. Falls back to phone if empty. */
   whatsapp: "",
   hamanaWebsite: "https://hamanahomes.com.ph/",
   hamanaUnits: "https://hamanahomes.com.ph/units/",
@@ -28,15 +37,21 @@ export const heroContent = {
 export const aboutContent = {
   sectionTitle: "Rish, Hamana Homes Agent",
   intro:
-    "Hi, I'm Rish, an in-house real estate agent for Hamana Homes in Magalang, Pampanga, near Clark.",
+    "Looking for a home in Magalang, Pampanga, near Clark? I'm Rish, an in-house real estate agent at Hamana Homes, here to make your home-buying journey easier from start to finish.",
   trackRecord:
-    "I closed 5 deals in just 3 months. I help buyers with site visits, reservations, bank loans, and turnover. Message me if you want to check available units or schedule a visit.",
-  turnover:
-    "For RFO units or Ready for Occupancy, turnover is 2 to 3 months. For near ready units it's 6 months. For regular units it takes 12 months.",
-  virtualTripping:
-    "We also do online presentation or virtual tripping, especially for OFWs and far away locations.",
+    "With 5 successful deals closed in just 3 months, I personally assist buyers with site visits, reservations, bank financing, and turnover, so you have someone to guide you every step of the way.",
+  timelineTitle: "Choose a Home That Fits Your Timeline",
+  timeline: [
+    "RFO / Ready for Occupancy: Turnover in 2–3 months",
+    "Near-Ready Units: Turnover in around 6 months",
+    "Regular Units: Turnover in around 12 months",
+  ],
+  paymentTitle: "Reserve for only ₱25,000!",
   payment:
-    "Reservation fee is only ₱25,000. We offer flexible payment terms and Paylite for lighter monthly payment.",
+    "Enjoy flexible payment terms and Paylite options designed to make your monthly payments more manageable.",
+  ofwTitle: "For OFWs & Buyers Living Far Away",
+  virtualTripping:
+    "You don't have to be in Pampanga to start your home-buying journey. We offer online presentations and virtual tripping, allowing you to explore available homes from wherever you are.",
 };
 
 export const aboutPhdcContent = {
@@ -516,21 +531,15 @@ export function getWhatsAppUrl(message = defaultWhatsAppMessage): string | null 
   return `https://wa.me/${digits}?text=${encodeURIComponent(message)}`;
 }
 
-export function buildContactMessage(fields: {
-  name: string;
-  email: string;
-  phone: string;
-  interest: string;
-  message: string;
-}) {
-  return [
-    "Hi Rish, message from your website:",
-    "",
-    `Name: ${fields.name}`,
-    `Email: ${fields.email}`,
-    `Phone: ${fields.phone || "Not provided"}`,
-    `Interest: ${fields.interest}`,
-    "",
-    fields.message,
-  ].join("\n");
+export function getTelLink(): string {
+  const digits = getWhatsAppDigits();
+  return digits ? `tel:+${digits}` : "";
+}
+
+export function formatPhoneDisplay(phone: string): string {
+  const digits = phone.replace(/\D/g, "");
+  if (digits.length === 11 && digits.startsWith("09")) {
+    return `${digits.slice(0, 4)} ${digits.slice(4, 7)} ${digits.slice(7)}`;
+  }
+  return phone;
 }

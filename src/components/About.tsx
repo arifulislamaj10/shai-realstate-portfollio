@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import Reveal from "./Reveal";
-import { aboutContent, highlights, siteConfig, stats } from "@/data/site";
+import { aboutContent, siteConfig, stats } from "@/data/site";
 
 export default function About() {
   return (
@@ -37,17 +37,23 @@ export default function About() {
             <h2 className="section-title">{aboutContent.sectionTitle}</h2>
             <p className="about-text">{aboutContent.intro}</p>
             <p className="about-text">{aboutContent.trackRecord}</p>
-            <p className="about-text">{aboutContent.turnover}</p>
-            <p className="about-text">{aboutContent.virtualTripping}</p>
-            <p className="about-text">{aboutContent.payment}</p>
+
+            <h3 className="about-subheading">{aboutContent.timelineTitle}</h3>
             <ul className="about-highlights">
-              {highlights.map((item) => (
+              {aboutContent.timeline.map((item) => (
                 <li key={item}>
                   <span className="highlight-icon">✓</span>
                   {item}
                 </li>
               ))}
             </ul>
+
+            <h3 className="about-subheading">{aboutContent.paymentTitle}</h3>
+            <p className="about-text">{aboutContent.payment}</p>
+
+            <h3 className="about-subheading">{aboutContent.ofwTitle}</h3>
+            <p className="about-text">{aboutContent.virtualTripping}</p>
+
             <div className="about-stats">
               {stats.map((stat) => (
                 <div key={stat.label} className="about-stat">
@@ -57,7 +63,7 @@ export default function About() {
               ))}
             </div>
             <Link
-              href={siteConfig.facebook}
+              href={siteConfig.facebookPages[0].url}
               target="_blank"
               rel="noopener noreferrer"
               className="btn btn-secondary"
