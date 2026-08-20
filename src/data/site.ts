@@ -111,6 +111,10 @@ export const locationContent = {
     "Near Clark, along Magalang-Mabalacat Highway in Magalang, Pampanga. Easy access to NLEX, SCTEX, Clark airport, schools, malls, and work areas.",
   address: "Mabalacat-Magalang Road, Santo Rosario and San Isidro, Magalang, Pampanga 2011",
   googleMapsUrl: "https://maps.app.goo.gl/rHCyo5x9PGMRCgw38",
+  banner: {
+    src: "/images/location/location-banner.jpg",
+    alt: "Aerial view of Hamana Homes in Magalang with Mt. Arayat in the background",
+  },
   map: {
     src: "/images/location/vicinity-map.png",
     alt: "Hamana Homes location and nearby landmarks",

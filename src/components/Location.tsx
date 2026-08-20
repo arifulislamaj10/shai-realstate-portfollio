@@ -1,10 +1,9 @@
 import Image from "next/image";
-import Link from "next/link";
 import Reveal from "./Reveal";
 import { locationContent } from "@/data/site";
 
 export default function Location() {
-  const { label, title, intro, googleMapsUrl, map, items } = locationContent;
+  const { label, title, intro, banner, map, items } = locationContent;
 
   return (
     <section className="location section showcase--alt" id="location">
@@ -15,25 +14,26 @@ export default function Location() {
           <p className="section-desc">{intro}</p>
         </Reveal>
 
+        <Reveal className="location-banner">
+          <Image
+            src={banner.src}
+            alt={banner.alt}
+            width={1600}
+            height={700}
+            className="location-banner-image"
+            sizes="(max-width: 968px) 100vw, 960px"
+          />
+        </Reveal>
+
         <Reveal className="location-map">
-          <Link
-            href={googleMapsUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="location-map-link"
-            aria-label="Open Hamana Homes location in Google Maps"
-          >
-            <Image
-              src={map.src}
-              alt={map.alt}
-              width={1400}
-              height={900}
-              className="location-map-image"
-              sizes="(max-width: 968px) 100vw, 960px"
-              priority
-            />
-            <span className="location-map-hint">Tap to open in Google Maps</span>
-          </Link>
+          <Image
+            src={map.src}
+            alt={map.alt}
+            width={1400}
+            height={900}
+            className="location-map-image"
+            sizes="(max-width: 968px) 100vw, 960px"
+          />
         </Reveal>
 
         <div className="amenities-grid location-grid">

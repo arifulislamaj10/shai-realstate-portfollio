@@ -39,7 +39,7 @@ export default function Testimonials() {
                     <div className="client-story-frame">
                       <Image
                         src={item.image}
-                        alt={`${item.clientName}, ${item.unit}`}
+                        alt={`${item.unit} client story`}
                         width={640}
                         height={480}
                         className="client-story-image"
@@ -50,8 +50,7 @@ export default function Testimonials() {
 
                   <div className="client-story-content">
                     <div className="client-story-header">
-                      <strong>{item.clientName}</strong>
-                      <span>{item.unit}</span>
+                      <strong>{item.unit}</strong>
                     </div>
                     <p className="client-story-quote">{item.quote}</p>
                     <div className="client-story-meta">
