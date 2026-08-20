@@ -1317,6 +1317,22 @@ a {
   margin-bottom: 8px;
 }
 
+.unit-specs {
+  list-style: none;
+  margin: 0 0 10px;
+  padding: 0;
+}
+
+.unit-specs li {
+  font-size: 0.88rem;
+  color: var(--color-text);
+  line-height: 1.55;
+}
+
+.unit-specs li + li {
+  margin-top: 4px;
+}
+
 .unit-price {
   font-size: 0.92rem;
   color: var(--color-accent);

@@ -253,7 +253,7 @@ export const services = [
   {
     title: "Financing Help",
     description:
-      "Pag-IBIG, bank, or in-house financing. I can compute your monthly payment and help with Paylite.",
+      "Pag-IBIG or bank financing. I can compute your monthly payment and help with Paylite.",
     icon: "money",
     image: "/images/hamana-units-banner.jpg",
   },
@@ -317,7 +317,9 @@ export const availableUnits = [
     id: "nanea",
     name: "Nanea",
     type: "Single Attached",
-    beds: "2 to 3 BR",
+    beds: "3 BR",
+    lotArea: "90 sqm",
+    floorArea: "64.5 sqm",
     priceNote: "₱6.5M to ₱7.5M",
     image: "/images/nanea.jpg",
   },
@@ -325,7 +327,9 @@ export const availableUnits = [
     id: "meana",
     name: "Meana",
     type: "Duplex",
-    beds: "2 to 3 BR",
+    beds: "3 BR",
+    lotArea: "80 sqm",
+    floorArea: "54 sqm",
     priceNote: "₱4.6M to ₱5.3M",
     image: "/images/meana.jpg",
   },
@@ -334,6 +338,10 @@ export const availableUnits = [
     name: "Onea",
     type: "Duplex Deluxe",
     beds: "3 BR",
+    variants: [
+      { lotArea: "80 sqm", floorArea: "54 sqm" },
+      { lotArea: "90 sqm", floorArea: "64.5 sqm" },
+    ],
     priceNote: "₱5.8M to ₱6.8M",
     image: "/images/onea.jpg",
   },
@@ -341,7 +349,11 @@ export const availableUnits = [
     id: "kanea",
     name: "Kanea",
     type: "Townhouse",
-    beds: "2 to 3 BR",
+    beds: "3 BR",
+    variants: [
+      { label: "End", lotArea: "75 sqm", floorArea: "51 sqm" },
+      { label: "Inner", lotArea: "51 sqm", floorArea: "50 sqm" },
+    ],
     priceNote: "₱3.4M to ₱4.2M",
     image: "/images/kanea.jpg",
   },
@@ -371,7 +383,7 @@ export const howToBuySteps = [
   {
     step: "5",
     title: "Loan processing",
-    description: "Pag-IBIG, bank, or in-house financing. I can help compute monthly payment and assist with documents.",
+    description: "Pag-IBIG or bank financing. I can help compute monthly payment and assist with documents.",
   },
   {
     step: "6",
@@ -392,7 +404,7 @@ export const faqItems = [
   },
   {
     question: "Can I use Pag-IBIG or a bank loan?",
-    answer: "Yes. Hamana Homes accepts Pag-IBIG, bank financing, and in-house options.",
+    answer: "Yes. Hamana Homes accepts Pag-IBIG and bank financing.",
   },
   {
     question: "Is the site visit free?",

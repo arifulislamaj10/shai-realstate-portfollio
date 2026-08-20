@@ -32,6 +32,20 @@ export default function AvailableUnits() {
                 <div className="unit-card-body">
                   <h3>{unit.name}</h3>
                   <p className="unit-beds">{unit.beds}</p>
+                  <ul className="unit-specs">
+                    {"variants" in unit && unit.variants
+                      ? unit.variants.map((variant) => (
+                          <li key={`${variant.label ?? variant.lotArea}-${variant.floorArea}`}>
+                            {variant.label ? `${variant.label}: ` : ""}
+                            {variant.lotArea} lot · {variant.floorArea} floor
+                          </li>
+                        ))
+                      : (
+                          <li>
+                            {unit.lotArea} lot · {unit.floorArea} floor
+                          </li>
+                        )}
+                  </ul>
                   <p className="unit-price">{unit.priceNote}</p>
                   <Link href={`/?unit=${unit.id}#contact`} className="btn btn-primary btn-full unit-cta">
                     Message {siteConfig.name} about {unit.name}
