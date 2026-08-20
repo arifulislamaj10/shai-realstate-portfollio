@@ -160,7 +160,7 @@ export const amenitiesContent = {
   label: "Amenities",
   title: "Community Amenities",
   intro:
-    "Clubhouse, swimming pool, court, parks, chapel, retail store, Hamana mall, and 24-hour security inside Hamana Homes.",
+    "Clubhouse, swimming pool, court, parks, retail store, Hamana mall, and 24-hour security inside Hamana Homes.",
   officialLink: "https://hamanahomes.com.ph/amenities/",
   items: [
     {
@@ -188,11 +188,11 @@ export const amenitiesContent = {
       description: "Active play area for kids of any age.",
       image: "/images/amenities/playground.jpg",
     },
-    {
-      name: "Hamana Homes Chapel",
-      description: "Spend quiet time in prayer alone or with the community.",
-      image: "/images/amenities/chapel.png",
-    },
+    // {
+    //   name: "Hamana Homes Chapel",
+    //   description: "Spend quiet time in prayer alone or with the community.",
+    //   image: "/images/amenities/chapel.png",
+    // },
     {
       name: "4 Linear Parks",
       description: "Jogging paths and play areas spread across the community.",
