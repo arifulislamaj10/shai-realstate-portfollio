@@ -26,14 +26,13 @@ export default function Home() {
         <Services />
         <AvailableUnits />
         <SampleComputation />
+        <HowToBuy />
         <Location />
         <Amenities />
-        <SiteVisitCta />
         <Portfolio />
-        <HowToBuy />
+        <Testimonials />
         <VideoBlog />
         <FAQ />
-        <Testimonials />
         <SiteVisitCta />
         <Contact />
       </main>
