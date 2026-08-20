@@ -18,7 +18,7 @@ export const siteConfig = {
 
 export const heroContent = {
   eyebrow: "Hamana Homes, Magalang, Pampanga",
-  headline: "Homes for sale near Clark",
+  headline: "Get your Hamana Home Today",
   description:
     "Hi, I'm Rish, in-house agent for Hamana Homes. I closed 5 deals in 3 months. I help with site visits, reservations, bank loans, and turnover.",
   primaryCta: { label: "Book a Site Visit", href: "#contact" },
