@@ -61,10 +61,6 @@ export const aboutPhdcContent = {
     {
       id: "about-company",
       title: "Century Pacific Group",
-      image: {
-        src: "/images/parent-company/century-pacific.jpg",
-        alt: "Century Pacific Group brands",
-      },
       paragraphs: [
         "Century Pacific Group Inc. is the parent company. It is a diversified group in food manufacturing, distribution, food retail, and real estate development.",
         "The Po family is behind some of the Philippines' well-known brands, including Century Tuna, Birch Tree, Shakey's, Peri-Peri, Potato Corner, and more.",
