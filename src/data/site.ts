@@ -29,7 +29,7 @@ export const heroContent = {
   eyebrow: "Hamana Homes, Magalang, Pampanga",
   headline: "Get your Hamana Home Today",
   description:
-    "Hi, I'm Rish, in-house agent for Hamana Homes. I closed 5 deals in 3 months. I help with site visits, reservations, bank loans, and turnover.",
+    "Hi, I'm Rish, in-house agent for Hamana Homes. I closed 5 Meana duplex deals in 3 months. I help with site visits, reservations, bank loans, and turnover.",
   primaryCta: { label: "Book a Site Visit", href: "#contact" },
   secondaryCta: { label: "See Closed Deals", href: "#portfolio" },
 };
@@ -39,7 +39,7 @@ export const aboutContent = {
   intro:
     "Looking for a home in Magalang, Pampanga, near Clark? I'm Rish, an in-house real estate agent at Hamana Homes, here to make your home-buying journey easier from start to finish.",
   trackRecord:
-    "With 5 successful deals closed in just 3 months, I personally assist buyers with site visits, reservations, bank financing, and turnover, so you have someone to guide you every step of the way.",
+    "With 5 Meana duplex deals closed in just 3 months, I personally assist buyers with site visits, reservations, bank financing, and turnover, so you have someone to guide you every step of the way.",
   timelineTitle: "Choose a Home That Fits Your Timeline",
   timeline: [
     "RFO / Ready for Occupancy: Turnover in 2–3 months",
@@ -143,7 +143,7 @@ export const amenitiesContent = {
   label: "Amenities",
   title: "Community Amenities",
   intro:
-    "Clubhouse, swimming pool, multi-purpose court, parks, playground, chapel, and 24-hour security inside Hamana Homes.",
+    "Clubhouse, swimming pool, court, parks, chapel, retail store, Hamana mall, and 24-hour security inside Hamana Homes.",
   officialLink: "https://hamanahomes.com.ph/amenities/",
   items: [
     {
@@ -181,6 +181,16 @@ export const amenitiesContent = {
       description: "Jogging paths and play areas spread across the community.",
       image: "/images/amenities/linear-park.jpg",
     },
+    {
+      name: "Retail Store",
+      description: "Commercial retail spaces for everyday shopping inside the community.",
+      image: "/images/amenities/retail-store.jpg",
+    },
+    {
+      name: "Hamana Mall",
+      description: "H Mall Magalang with shops and dining for residents and nearby areas.",
+      image: "/images/amenities/hamana-mall.jpg",
+    },
   ],
 };
 
@@ -197,14 +207,14 @@ export const heroCarouselSlides = [
 ];
 
 export const stats = [
-  { number: "5", label: "Deals Closed" },
+  { number: "5", label: "Meana Units Closed" },
   { number: "5", label: "Happy Clients" },
   { number: "3", label: "Months" },
 ];
 
 export const highlights = [
   "In-house Hamana Homes agent",
-  "5 deals closed in 3 months",
+  "5 Meana duplex deals closed in 3 months",
   "Nanea, Meana, Onea, and Kanea models",
   "Pag-IBIG and bank loan help",
   "Virtual tripping for OFWs",
@@ -405,41 +415,41 @@ export const portfolioItems = [
   },
   {
     id: "deal-1",
-    name: "Closed Deal",
+    name: "Meana Duplex",
     category: "closed-deals",
-    tag: "Turnover",
+    tag: "Meana Turnover",
     location: "Magalang, Pampanga",
     image: "/images/deal-1.jpeg",
   },
   {
     id: "deal-2",
-    name: "Closed Deal",
+    name: "Meana Duplex",
     category: "closed-deals",
-    tag: "Turnover",
+    tag: "Meana Turnover",
     location: "Magalang, Pampanga",
     image: "/images/deal-2.jpeg",
   },
   {
     id: "deal-3",
-    name: "Closed Deal",
+    name: "Meana Duplex",
     category: "closed-deals",
-    tag: "Turnover",
+    tag: "Meana Turnover",
     location: "Magalang, Pampanga",
     image: "/images/deal-3.jpeg",
   },
   {
     id: "deal-4",
-    name: "Closed Deal",
+    name: "Meana Duplex",
     category: "closed-deals",
-    tag: "Turnover",
+    tag: "Meana Turnover",
     location: "Magalang, Pampanga",
     image: "/images/deal-4.jpeg",
   },
   {
     id: "deal-5",
-    name: "Closed Deal",
+    name: "Meana Duplex",
     category: "closed-deals",
-    tag: "Turnover",
+    tag: "Meana Turnover",
     location: "Magalang, Pampanga",
     image: "/images/deal-5.jpeg",
   },
@@ -453,50 +463,50 @@ export const portfolioFilters = [
 
 export const testimonials = [
   {
-    id: "meana-1",
+    id: "client-1",
     quote:
-      "We bought our Meana duplex with Rish. She was patient and clear from site visit to turnover. Very satisfied with our new home in Magalang.",
-    clientName: "Meana buyer",
+      "We bought our Meana duplex with Rish. He was patient and clear from site visit to turnover. Very satisfied with our new home in Magalang.",
+    clientName: "Maria & family",
     unit: "Meana Duplex",
     location: "Magalang, Pampanga",
     price: "₱4.6M to ₱5.3M",
     image: "/images/deal-1.jpeg",
   },
   {
-    id: "meana-2",
+    id: "client-2",
     quote:
       "Rish arranged our site visit and explained every step for our Meana unit. The whole process was smooth and we are satisfied with the service.",
-    clientName: "Meana buyer",
+    clientName: "Juan & Ana",
     unit: "Meana Duplex",
     location: "Magalang, Pampanga",
     price: "₱4.6M to ₱5.3M",
     image: "/images/deal-2.jpeg",
   },
   {
-    id: "meana-3",
+    id: "client-3",
     quote:
-      "I am an OFW and Rish kept us updated the whole time. Virtual updates helped a lot until we got our Meana unit. Very satisfied with her work.",
-    clientName: "Meana buyer",
+      "I am an OFW and Rish kept us updated the whole time. Virtual updates helped a lot until we got our Meana unit. Very satisfied with his work.",
+    clientName: "OFW buyer",
     unit: "Meana Duplex",
     location: "Magalang, Pampanga",
     price: "₱4.6M to ₱5.3M",
     image: "/images/deal-3.jpeg",
   },
   {
-    id: "meana-4",
+    id: "client-4",
     quote:
-      "Rish helped us with bank financing for our Meana duplex. She stayed with us until we got our keys. Satisfied and highly recommend her.",
-    clientName: "Meana buyer",
+      "Rish helped us with bank financing for our Meana duplex. He stayed with us until we got our keys. Satisfied and highly recommend him.",
+    clientName: "Bank loan client",
     unit: "Meana Duplex",
     location: "Magalang, Pampanga",
     price: "₱4.6M to ₱5.3M",
     image: "/images/deal-4.jpeg",
   },
   {
-    id: "meana-5",
+    id: "client-5",
     quote:
       "From reservation to turnover, Rish made everything easy. We purchased our Meana unit in cash. Satisfied client and happy homeowner.",
-    clientName: "Meana buyer",
+    clientName: "Cash buyer",
     unit: "Meana Duplex",
     location: "Magalang, Pampanga",
     price: "Cash purchase",

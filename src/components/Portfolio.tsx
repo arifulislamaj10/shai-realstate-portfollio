@@ -21,7 +21,7 @@ export default function Portfolio() {
           <span className="section-label">Closed Deals</span>
           <h2 className="section-title">Recent Turnovers</h2>
           <p className="section-desc">
-            Hamana Homes community and 5 deals closed in the last 3 months
+            Five Meana duplex turnovers in the last 3 months
           </p>
         </Reveal>
 

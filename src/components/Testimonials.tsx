@@ -22,7 +22,9 @@ export default function Testimonials() {
         <Reveal className="section-header">
           <span className="section-label">Client Stories</span>
           <h2 className="section-title">Happy Homeowners</h2>
-          <p className="section-desc">Real turnover photos from buyers I worked with</p>
+          <p className="section-desc">
+            Five different clients. All purchased Meana units.
+          </p>
         </Reveal>
 
         <Reveal className="client-stories-carousel">
@@ -53,10 +55,8 @@ export default function Testimonials() {
                     </div>
                     <p className="client-story-quote">{item.quote}</p>
                     <div className="client-story-meta">
-                      <span className="client-story-unit">{item.unit}</span>
                       <span className="client-story-location">{item.location}</span>
                       <span className="client-story-price">{item.price}</span>
-                      <span className="client-story-rating">Satisfied client</span>
                     </div>
                   </div>
                 </article>
