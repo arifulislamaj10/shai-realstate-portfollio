@@ -2,10 +2,18 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { navLinks, siteConfig } from "@/data/site";
 
+function getLinkHash(href: string): string | null {
+  const hashIndex = href.indexOf("#");
+  if (hashIndex === -1) return null;
+  return href.slice(hashIndex + 1);
+}
+
 export default function Nav() {
+  const pathname = usePathname();
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
   const [active, setActive] = useState("home");
@@ -13,6 +21,8 @@ export default function Nav() {
   useEffect(() => {
     const onScroll = () => {
       setScrolled(window.scrollY > 50);
+
+      if (pathname !== "/") return;
 
       const sections = document.querySelectorAll("section[id]");
       let current = "home";
@@ -26,7 +36,7 @@ export default function Nav() {
     window.addEventListener("scroll", onScroll);
     onScroll();
     return () => window.removeEventListener("scroll", onScroll);
-  }, []);
+  }, [pathname]);
 
   useEffect(() => {
     document.body.style.overflow = menuOpen ? "hidden" : "";
@@ -34,6 +44,13 @@ export default function Nav() {
       document.body.style.overflow = "";
     };
   }, [menuOpen]);
+
+  const isLinkActive = (href: string) => {
+    if (href === "/about-phdc") return pathname === "/about-phdc";
+    if (pathname !== "/") return false;
+    const hash = getLinkHash(href);
+    return hash ? active === hash : false;
+  };
 
   return (
     <nav className={`nav ${scrolled ? "scrolled" : ""} ${menuOpen ? "menu-open" : ""}`}>
@@ -47,7 +64,7 @@ export default function Nav() {
       )}
 
       <div className="nav-container">
-        <Link href="#home" className="nav-logo" onClick={() => setMenuOpen(false)}>
+        <Link href="/" className="nav-logo" onClick={() => setMenuOpen(false)}>
           <span className="logo-mark">
             <Image
               src={siteConfig.profilePhoto}
@@ -77,7 +94,7 @@ export default function Nav() {
             <li key={link.href}>
               <Link
                 href={link.href}
-                className={active === link.href.slice(1) ? "active" : ""}
+                className={isLinkActive(link.href) ? "active" : ""}
                 onClick={() => setMenuOpen(false)}
               >
                 {link.label}

@@ -9,7 +9,6 @@ import Hero from "@/components/Hero";
 import HowToBuy from "@/components/HowToBuy";
 import Location from "@/components/Location";
 import Nav from "@/components/Nav";
-import ParentCompany from "@/components/ParentCompany";
 import Portfolio from "@/components/Portfolio";
 import Services from "@/components/Services";
 import SiteVisitCta from "@/components/SiteVisitCta";
@@ -23,7 +22,6 @@ export default function Home() {
       <main>
         <Hero />
         <About />
-        <ParentCompany />
         <Services />
         <AvailableUnits />
         <Location />

@@ -39,24 +39,54 @@ export const aboutContent = {
     "Reservation fee is only ₱25,000. We offer flexible payment terms and Paylite for lighter monthly payment.",
 };
 
-export const parentCompanyContent = {
-  label: "Parent Company",
-  title: "Who Develops Hamana Homes",
-  intro:
-    "Hamana Homes is a 15 hectare mixed development in Magalang, Pampanga. It is built by Pacifica Homes Development Corporation.",
-  backing:
-    "Pacifica Homes is under Century Pacific Group, Inc. Century Pacific is a big Philippine company behind household names like Century Tuna, 555, Shakey's, and Potato Corner.",
-  image: {
-    src: "/images/hamana-hero.jpg",
-    alt: "Hamana Homes community in Magalang, Pampanga",
-  },
-  stats: [
-    { value: "15 hectares", label: "Mixed development" },
-    { value: "Pacifica Homes", label: "Developer" },
-    { value: "Century Pacific", label: "Parent group" },
+export const aboutPhdcContent = {
+  pageTitle: "About PHDC",
+  sections: [
+    {
+      id: "about-phdc",
+      title: "About PHDC",
+      image: {
+        src: "/images/parent-company/pacifica-homes.jpg",
+        alt: "Pacifica Homes Development Corporation",
+      },
+      paragraphs: [
+        "Pacifica Homes Development Corporation (PHDC) leads the sale, construction, and delivery of premium affordable homes in the Philippines. Together with chairman Mr. Ted Po, president Mr. Leo Po, and their brothers on the board, PHDC aims to deliver superior quality homes with mid-market features at low-cost housing prices.",
+        "PHDC uses innovative construction technology to build better homes that last. The company focuses on premium house features and better value compared to other developers in its category.",
+        "Generous green open spaces, premium amenities, and wider road networks help residents move in and out of the community faster. That balance of urban convenience and suburban living is what PHDC aims to give every homeowner.",
+      ],
+    },
+    {
+      id: "about-hamana",
+      title: "About Hamana Homes",
+      paragraphs: [
+        "Hamana Homes is a 15-hectare residential development with generous lot sizes and livable floor areas inspired by modern Asian home design.",
+        "The project is planned with commercial areas that will include a transport hub for residents.",
+        "The main entryway has a 16-meter wide right-of-way. The major access road is 12 meters wide. Collector and minor roads are 8 to 10 meters wide.",
+        "Open spaces, landscaping, community facilities, path walks, and road networks make up almost 40% of the development. The main amenity area has a clubhouse, swimming pool, and basketball court. Pocket parks are spread across the community so all residents can reach them easily.",
+      ],
+    },
+    {
+      id: "about-company",
+      title: "About the Company",
+      image: {
+        src: "/images/parent-company/century-pacific.jpg",
+        alt: "Century Pacific Group brands",
+      },
+      paragraphs: [
+        "Century Pacific Group is the parent company. It is a diversified group in food manufacturing, distribution, food retail, and real estate development. It was incorporated with the Philippine SEC on October 25, 2013.",
+        "Century Pacific owns leading brands including Shakey's, Peri-Peri Chicken, Potato Corner, and many other household names in the Philippines.",
+      ],
+    },
   ],
-  foodBrands: ["Century Tuna", "555", "Ligo", "Hunt's", "Birch Tree", "Vita Coco"],
-  diningBrands: ["Shakey's", "Potato Corner", "Peri-Peri", "Project Pie"],
+  vision:
+    "To be the most trusted developer of delightful, best-in-class, and affordable homes in the Philippines by delivering superior quality and value through focus and innovation, while providing a more sustainable way of building and living for the mass to mid-income markets.",
+  mission: [
+    "Owning the Customer-First Mindset",
+    "Delivering Quality Work",
+    "Ensure Continuous Personal Growth for our Employees",
+    "Achieve Equitable Corporate Governance and Highest Social Responsibility Standards",
+    "Advancing Sustainable Growth and Profitability for the Company",
+  ],
 };
 
 export const locationContent = {
@@ -64,7 +94,8 @@ export const locationContent = {
   title: "Strategic Location",
   intro:
     "Near Clark, along Magalang-Mabalacat Highway in Magalang, Pampanga. Easy access to NLEX, SCTEX, Clark airport, schools, malls, and work areas.",
-  officialLink: "https://hamanahomes.com.ph/location/",
+  address: "Mabalacat-Magalang Road, Santo Rosario and San Isidro, Magalang, Pampanga 2011",
+  googleMapsUrl: "https://maps.app.goo.gl/rHCyo5x9PGMRCgw38",
   map: {
     src: "/images/location/vicinity-map.png",
     alt: "Hamana Homes location and nearby landmarks",
@@ -454,17 +485,17 @@ export const testimonials = [
 ];
 
 export const navLinks = [
-  { href: "#home", label: "Home" },
-  { href: "#about", label: "About" },
-  { href: "#parent-company", label: "Parent Company" },
-  { href: "#services", label: "Services" },
-  { href: "#units", label: "Units" },
-  { href: "#location", label: "Location" },
-  { href: "#amenities", label: "Amenities" },
-  { href: "#portfolio", label: "Portfolio" },
-  { href: "#videos", label: "Videos" },
-  { href: "#faq", label: "FAQ" },
-  { href: "#contact", label: "Contact" },
+  { href: "/#home", label: "Home" },
+  { href: "/#about", label: "About" },
+  { href: "/about-phdc", label: "Parent Company" },
+  { href: "/#services", label: "Services" },
+  { href: "/#units", label: "Units" },
+  { href: "/#location", label: "Location" },
+  { href: "/#amenities", label: "Amenities" },
+  { href: "/#portfolio", label: "Portfolio" },
+  { href: "/#videos", label: "Videos" },
+  { href: "/#faq", label: "FAQ" },
+  { href: "/#contact", label: "Contact" },
 ];
 
 export const defaultWhatsAppMessage =
