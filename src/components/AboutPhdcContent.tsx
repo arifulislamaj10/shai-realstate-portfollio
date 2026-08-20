@@ -4,7 +4,7 @@ import Reveal from "./Reveal";
 import { aboutPhdcContent } from "@/data/site";
 
 export default function AboutPhdcContent() {
-  const { pageTitle, sections, vision, mission } = aboutPhdcContent;
+  const { pageTitle, pageSubtitle, sections, vision, mission } = aboutPhdcContent;
 
   return (
     <>
@@ -14,6 +14,7 @@ export default function AboutPhdcContent() {
             <Link href="/" className="about-phdc-back">
               ← Back to home
             </Link>
+            <p className="about-phdc-subtitle">{pageSubtitle}</p>
             <h1 className="about-phdc-title">{pageTitle}</h1>
           </Reveal>
         </div>
@@ -30,7 +31,7 @@ export default function AboutPhdcContent() {
                 height={1080}
                 className="about-phdc-image"
                 sizes="100vw"
-                priority={section.id === "about-phdc"}
+                priority={section.id === "about-hamana"}
               />
             </figure>
           ) : null}
@@ -43,6 +44,23 @@ export default function AboutPhdcContent() {
                   {paragraph}
                 </p>
               ))}
+
+              {section.images?.length ? (
+                <div className="about-phdc-gallery">
+                  {section.images.map((image) => (
+                    <figure key={image.src} className="about-phdc-gallery-item">
+                      <Image
+                        src={image.src}
+                        alt={image.alt}
+                        width={960}
+                        height={1200}
+                        className="about-phdc-gallery-image"
+                        sizes="(max-width: 768px) 100vw, 420px"
+                      />
+                    </figure>
+                  ))}
+                </div>
+              ) : null}
             </Reveal>
           </div>
         </article>

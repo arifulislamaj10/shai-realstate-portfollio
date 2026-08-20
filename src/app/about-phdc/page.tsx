@@ -5,9 +5,9 @@ import Footer from "@/components/Footer";
 import Nav from "@/components/Nav";
 
 export const metadata: Metadata = {
-  title: "About PHDC | Rish | Hamana Homes",
+  title: "About Hamana Homes | Rish | Hamana Homes",
   description:
-    "About Pacifica Homes Development Corporation, Hamana Homes, and Century Pacific Group.",
+    "Hamana Homes by PHDC and Century Pacific Group. Built by a trusted legacy, designed for the future.",
 };
 
 export default function AboutPhdcPage() {

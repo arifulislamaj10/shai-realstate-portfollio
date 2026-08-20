@@ -55,8 +55,23 @@ export const aboutContent = {
 };
 
 export const aboutPhdcContent = {
-  pageTitle: "About PHDC",
+  pageTitle: "About Hamana Homes",
+  pageSubtitle: "Built by a Trusted Legacy. Designed for the Future.",
   sections: [
+    {
+      id: "about-hamana",
+      title: "Hamana Homes",
+      image: {
+        src: "/images/parent-company-pacifica.jpeg",
+        alt: "Century Pacific Group, PHDC, and Hamana Homes 15-hectare development",
+      },
+      paragraphs: [
+        "Hamana Homes is the flagship residential project of PHDC, a developer under the Century Pacific Group Inc., a company owned by the Po family.",
+        "Hamana Homes is a 15-hectare modern Asian-inspired residential community designed to provide families with a comfortable, meaningful, and future-ready place to call home.",
+        "The name Hamana is a coined word inspired by the idea of \"homes that will stand the test of time.\"",
+        "The project is planned with commercial areas that will include a transport hub for residents. Open spaces, landscaping, community facilities, path walks, and road networks make up almost 40% of the development.",
+      ],
+    },
     {
       id: "about-phdc",
       title: "About PHDC",
@@ -71,25 +86,22 @@ export const aboutPhdcContent = {
       ],
     },
     {
-      id: "about-hamana",
-      title: "About Hamana Homes",
-      paragraphs: [
-        "Hamana Homes is a 15-hectare residential development with generous lot sizes and livable floor areas inspired by modern Asian home design.",
-        "The project is planned with commercial areas that will include a transport hub for residents.",
-        "The main entryway has a 16-meter wide right-of-way. The major access road is 12 meters wide. Collector and minor roads are 8 to 10 meters wide.",
-        "Open spaces, landscaping, community facilities, path walks, and road networks make up almost 40% of the development. The main amenity area has a clubhouse, swimming pool, and basketball court. Pocket parks are spread across the community so all residents can reach them easily.",
-      ],
-    },
-    {
       id: "about-company",
-      title: "About the Company",
-      image: {
-        src: "/images/parent-company/century-pacific.jpg",
-        alt: "Century Pacific Group brands",
-      },
+      title: "Century Pacific Group",
       paragraphs: [
-        "Century Pacific Group is the parent company. It is a diversified group in food manufacturing, distribution, food retail, and real estate development. It was incorporated with the Philippine SEC on October 25, 2013.",
-        "Century Pacific owns leading brands including Shakey's, Peri-Peri Chicken, Potato Corner, and many other household names in the Philippines.",
+        "The Po family is behind some of the Philippines' well-known brands, including Century Tuna, Birch Tree, Shakey's, Peri-Peri, Potato Corner, and more.",
+        "With a strong heritage in building trusted businesses, Century Pacific Group brings the same commitment to quality, value, and long-term growth to the communities it helps build.",
+        "Century Pacific Group is a diversified group in food manufacturing, distribution, food retail, and real estate development.",
+      ],
+      images: [
+        {
+          src: "/images/century-pacific-food.jpg",
+          alt: "Century Pacific food brands including Century Tuna and Birch Tree",
+        },
+        {
+          src: "/images/century-pacific-experiences.jpg",
+          alt: "Century Pacific restaurant brands including Shakey's, Peri-Peri, and Potato Corner",
+        },
       ],
     },
   ],
