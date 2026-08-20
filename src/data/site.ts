@@ -55,23 +55,9 @@ export const aboutContent = {
 };
 
 export const aboutPhdcContent = {
-  pageTitle: "About Hamana Homes",
+  pageTitle: "Parent Company",
   pageSubtitle: "Built by a Trusted Legacy. Designed for the Future.",
   sections: [
-    {
-      id: "about-hamana",
-      title: "Hamana Homes",
-      image: {
-        src: "/images/parent-company-pacifica.jpeg",
-        alt: "Century Pacific Group, PHDC, and Hamana Homes 15-hectare development",
-      },
-      paragraphs: [
-        "Hamana Homes is the flagship residential project of PHDC, a developer under the Century Pacific Group Inc., a company owned by the Po family.",
-        "Hamana Homes is a 15-hectare modern Asian-inspired residential community designed to provide families with a comfortable, meaningful, and future-ready place to call home.",
-        "The name Hamana is a coined word inspired by the idea of \"homes that will stand the test of time.\"",
-        "The project is planned with commercial areas that will include a transport hub for residents. Open spaces, landscaping, community facilities, path walks, and road networks make up almost 40% of the development.",
-      ],
-    },
     {
       id: "about-phdc",
       title: "About PHDC",
@@ -102,6 +88,20 @@ export const aboutPhdcContent = {
           src: "/images/century-pacific-experiences.jpg",
           alt: "Century Pacific restaurant brands including Shakey's, Peri-Peri, and Potato Corner",
         },
+      ],
+    },
+    {
+      id: "about-hamana",
+      title: "Hamana Homes",
+      image: {
+        src: "/images/parent-company-pacifica.jpeg",
+        alt: "Century Pacific Group, PHDC, and Hamana Homes 15-hectare development",
+      },
+      paragraphs: [
+        "Hamana Homes is the flagship residential project of PHDC, a developer under the Century Pacific Group Inc., a company owned by the Po family.",
+        "Hamana Homes is a 15-hectare modern Asian-inspired residential community designed to provide families with a comfortable, meaningful, and future-ready place to call home.",
+        "The name Hamana is a coined word inspired by the idea of \"homes that will stand the test of time.\"",
+        "The project is planned with commercial areas that will include a transport hub for residents. Open spaces, landscaping, community facilities, path walks, and road networks make up almost 40% of the development.",
       ],
     },
   ],

@@ -31,7 +31,7 @@ export default function AboutPhdcContent() {
                 height={1080}
                 className="about-phdc-image"
                 sizes="100vw"
-                priority={section.id === "about-hamana"}
+                priority={section.id === "about-phdc"}
               />
             </figure>
           ) : null}
