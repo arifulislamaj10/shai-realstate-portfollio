@@ -690,6 +690,211 @@ a {
   line-height: 1.3;
 }
 
+/* Parent Company */
+.parent-company {
+  background: linear-gradient(180deg, #f0ebe3 0%, var(--color-bg) 100%);
+}
+
+.parent-company-body {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.parent-company-text {
+  color: var(--color-text-muted);
+  font-size: 1.05rem;
+  margin-bottom: 20px;
+  line-height: 1.7;
+}
+
+.parent-company-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin: 36px 0;
+}
+
+.parent-company-stat {
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: 20px 16px;
+  text-align: center;
+  box-shadow: var(--shadow-sm);
+}
+
+.parent-company-stat strong {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  color: var(--color-text);
+  margin-bottom: 6px;
+  line-height: 1.3;
+}
+
+.parent-company-stat span {
+  font-size: 0.82rem;
+  color: var(--color-text-muted);
+}
+
+.parent-company-brands {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  padding-top: 8px;
+}
+
+.parent-company-brand-group h3 {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  color: var(--color-text);
+}
+
+.parent-company-brand-group p {
+  font-size: 0.92rem;
+  color: var(--color-text-muted);
+  line-height: 1.65;
+}
+
+/* Amenities */
+.amenities {
+  background: var(--color-bg);
+}
+
+.amenities-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.amenities-grid .reveal {
+  display: contents;
+}
+
+.amenity-card {
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition);
+}
+
+.amenity-card:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-4px);
+}
+
+.amenity-card-image {
+  position: relative;
+  aspect-ratio: 16/9;
+  overflow: hidden;
+}
+
+.amenity-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.amenity-card-body {
+  padding: 22px 24px 26px;
+}
+
+.amenity-card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  color: var(--color-text);
+}
+
+.amenity-card p {
+  font-size: 0.92rem;
+  color: var(--color-text-muted);
+  line-height: 1.65;
+}
+
+.amenities-footer {
+  text-align: center;
+  margin-top: 36px;
+}
+
+.amenities-footer p {
+  font-size: 0.875rem;
+  color: var(--color-text-muted);
+}
+
+.amenities-footer a {
+  color: var(--color-accent);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+/* Location */
+.location {
+  background: linear-gradient(180deg, #f0ebe3 0%, var(--color-bg) 100%);
+}
+
+.location-map {
+  max-width: 960px;
+  margin: 0 auto 32px;
+}
+
+.location-map-image {
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  display: block;
+  background: var(--color-bg-card);
+}
+
+.location-grid {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+/* Showcase sections (location) */
+.showcase {
+  background: var(--color-bg);
+}
+
+.showcase--alt {
+  background: linear-gradient(180deg, #f0ebe3 0%, var(--color-bg) 100%);
+}
+
+.showcase-feature {
+  max-width: 960px;
+  margin: 0 auto 28px;
+}
+
+.showcase-grid {
+  display: grid;
+  gap: 24px;
+}
+
+.showcase-grid--two {
+  grid-template-columns: repeat(2, 1fr);
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.showcase-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.showcase-image {
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  display: block;
+  background: var(--color-bg-card);
+}
+
 /* Services */
 .services {
   background: var(--color-bg-dark);
@@ -1850,6 +2055,22 @@ a.contact-link:hover {
 
   .steps-grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .showcase-grid--two {
+    grid-template-columns: 1fr;
+  }
+
+  .parent-company-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .parent-company-brands {
+    grid-template-columns: 1fr;
+  }
+
+  .amenities-grid {
+    grid-template-columns: 1fr;
   }
 }
 

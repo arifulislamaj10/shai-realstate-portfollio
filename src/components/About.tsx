@@ -13,8 +13,8 @@ export default function About() {
               <Image
                 src={siteConfig.profilePhoto}
                 alt={`${siteConfig.name}, ${siteConfig.title}`}
-                width={1033}
-                height={1600}
+                width={1086}
+                height={1448}
                 className="about-photo"
                 sizes="(max-width: 968px) 400px, 480px"
                 priority

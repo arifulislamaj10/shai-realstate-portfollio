@@ -11,7 +11,7 @@ export const siteConfig = {
   whatsapp: "",
   hamanaWebsite: "https://hamanahomes.com.ph/",
   hamanaUnits: "https://hamanahomes.com.ph/units/",
-  profilePhoto: "/images/rish-profile.jpeg",
+  profilePhoto: "/images/shai.png",
   hamanaLogo: "/images/hamana-logo.png",
   heroBackground: "/images/hamana-hero.jpg",
 };
@@ -37,6 +37,101 @@ export const aboutContent = {
     "We also do online presentation or virtual tripping, especially for OFWs and far away locations.",
   payment:
     "Reservation fee is only ₱25,000. We offer flexible payment terms and Paylite for lighter monthly payment.",
+};
+
+export const parentCompanyContent = {
+  label: "Parent Company",
+  title: "Who Develops Hamana Homes",
+  intro:
+    "Hamana Homes is a 15 hectare mixed development in Magalang, Pampanga. It is built by Pacifica Homes Development Corporation.",
+  backing:
+    "Pacifica Homes is under Century Pacific Group, Inc. Century Pacific is a big Philippine company behind household names like Century Tuna, 555, Shakey's, and Potato Corner.",
+  stats: [
+    { value: "15 hectares", label: "Mixed development" },
+    { value: "Pacifica Homes", label: "Developer" },
+    { value: "Century Pacific", label: "Parent group" },
+  ],
+  foodBrands: ["Century Tuna", "555", "Ligo", "Hunt's", "Birch Tree", "Vita Coco"],
+  diningBrands: ["Shakey's", "Potato Corner", "Peri-Peri", "Project Pie"],
+};
+
+export const locationContent = {
+  label: "Location",
+  title: "Strategic Location",
+  intro:
+    "Near Clark, along Magalang-Mabalacat Highway in Magalang, Pampanga. Easy access to NLEX, SCTEX, Clark airport, schools, malls, and work areas.",
+  officialLink: "https://hamanahomes.com.ph/location/",
+  map: {
+    src: "/images/location/vicinity-map.png",
+    alt: "Hamana Homes location and nearby landmarks",
+  },
+  items: [
+    {
+      name: "NLEX",
+      description: "Main connection to Manila, 11.4 km away through Dau Exit.",
+      image: "/images/location/nlex.jpg",
+    },
+    {
+      name: "SCTEX",
+      description: "Highway to other northern towns and provinces, 18.4 km away.",
+      image: "/images/location/sctex.jpg",
+    },
+    {
+      name: "Clark International Airport",
+      description: "Gateway to domestic and international flights, 10.7 km away.",
+      image: "/images/location/clark-airport.jpg",
+    },
+    {
+      name: "Future Train Station",
+      description: "North-South Commuter Railway station coming soon nearby.",
+      image: "/images/location/train-station.jpg",
+    },
+  ],
+};
+
+export const amenitiesContent = {
+  label: "Amenities",
+  title: "Community Amenities",
+  intro:
+    "Clubhouse, swimming pool, multi-purpose court, parks, playground, chapel, and 24-hour security inside Hamana Homes.",
+  officialLink: "https://hamanahomes.com.ph/amenities/",
+  items: [
+    {
+      name: "24-Hour Security Guardhouse",
+      description: "Exclusive gated community with 24/7 security for peace and order.",
+      image: "/images/amenities/guardhouse.jpg",
+    },
+    {
+      name: "The Clubhouse",
+      description: "A relaxing space for community events or small family get-togethers.",
+      image: "/images/amenities/clubhouse.jpg",
+    },
+    {
+      name: "Leisure Pool and Village Pavilion",
+      description: "Lounge by the pool or celebrate special events in the village pavilion.",
+      image: "/images/amenities/swimming-pool.jpg",
+    },
+    {
+      name: "Multi-Purpose Court",
+      description: "Open basketball court for sports with family and friends.",
+      image: "/images/amenities/basketball-court.jpg",
+    },
+    {
+      name: "The Playground",
+      description: "Active play area for kids of any age.",
+      image: "/images/amenities/playground.jpg",
+    },
+    {
+      name: "Hamana Homes Chapel",
+      description: "Spend quiet time in prayer alone or with the community.",
+      image: "/images/amenities/chapel.png",
+    },
+    {
+      name: "4 Linear Parks",
+      description: "Jogging paths and play areas spread across the community.",
+      image: "/images/amenities/linear-park.jpg",
+    },
+  ],
 };
 
 export const heroCarouselSlides = [
@@ -352,8 +447,11 @@ export const testimonials = [
 export const navLinks = [
   { href: "#home", label: "Home" },
   { href: "#about", label: "About" },
+  { href: "#parent-company", label: "Parent Company" },
   { href: "#services", label: "Services" },
   { href: "#units", label: "Units" },
+  { href: "#location", label: "Location" },
+  { href: "#amenities", label: "Amenities" },
   { href: "#portfolio", label: "Portfolio" },
   { href: "#videos", label: "Videos" },
   { href: "#faq", label: "FAQ" },

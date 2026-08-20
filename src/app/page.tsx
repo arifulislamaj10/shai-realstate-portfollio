@@ -1,4 +1,5 @@
 import About from "@/components/About";
+import Amenities from "@/components/Amenities";
 import AvailableUnits from "@/components/AvailableUnits";
 import Contact from "@/components/Contact";
 import FAQ from "@/components/FAQ";
@@ -6,7 +7,9 @@ import FloatingContact from "@/components/FloatingContact";
 import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
 import HowToBuy from "@/components/HowToBuy";
+import Location from "@/components/Location";
 import Nav from "@/components/Nav";
+import ParentCompany from "@/components/ParentCompany";
 import Portfolio from "@/components/Portfolio";
 import Services from "@/components/Services";
 import SiteVisitCta from "@/components/SiteVisitCta";
@@ -20,8 +23,11 @@ export default function Home() {
       <main>
         <Hero />
         <About />
+        <ParentCompany />
         <Services />
         <AvailableUnits />
+        <Location />
+        <Amenities />
         <SiteVisitCta />
         <Portfolio />
         <HowToBuy />
