@@ -46,6 +46,10 @@ export const parentCompanyContent = {
     "Hamana Homes is a 15 hectare mixed development in Magalang, Pampanga. It is built by Pacifica Homes Development Corporation.",
   backing:
     "Pacifica Homes is under Century Pacific Group, Inc. Century Pacific is a big Philippine company behind household names like Century Tuna, 555, Shakey's, and Potato Corner.",
+  image: {
+    src: "/images/hamana-hero.jpg",
+    alt: "Hamana Homes community in Magalang, Pampanga",
+  },
   stats: [
     { value: "15 hectares", label: "Mixed development" },
     { value: "Pacifica Homes", label: "Developer" },
@@ -403,7 +407,8 @@ export const portfolioFilters = [
 
 export const testimonials = [
   {
-    quote: "Smooth from reservation to turnover.",
+    quote:
+      "We reserved our Nanea unit with Rish. She was very patient and clear from site visit to turnover. We are very satisfied and happy with our new home in Magalang.",
     clientName: "Nanea buyer",
     unit: "Nanea Single Attached",
     location: "Magalang, Pampanga",
@@ -411,7 +416,8 @@ export const testimonials = [
     image: "/images/deal-1.jpeg",
   },
   {
-    quote: "Site visit and paperwork were easy to follow.",
+    quote:
+      "Rish arranged our site visit and explained every step for our Meana duplex. The whole process was smooth and we are satisfied with the service.",
     clientName: "Meana buyer",
     unit: "Meana Duplex",
     location: "Magalang, Pampanga",
@@ -419,7 +425,8 @@ export const testimonials = [
     image: "/images/deal-2.jpeg",
   },
   {
-    quote: "Good updates even while I was abroad.",
+    quote:
+      "I am an OFW and Rish kept us updated the whole time. Virtual updates helped a lot until we got our Onea unit. Very satisfied with her work.",
     clientName: "Onea buyer",
     unit: "Onea Duplex Deluxe",
     location: "Pampanga",
@@ -427,7 +434,8 @@ export const testimonials = [
     image: "/images/deal-3.jpeg",
   },
   {
-    quote: "Pag-IBIG process went well.",
+    quote:
+      "Rish helped us with Pag-IBIG for our Kanea townhouse. She stayed with us until we got our keys. We are satisfied and highly recommend her.",
     clientName: "Kanea buyer",
     unit: "Kanea Townhouse",
     location: "Magalang, Pampanga",
@@ -435,7 +443,8 @@ export const testimonials = [
     image: "/images/deal-4.jpeg",
   },
   {
-    quote: "Paylite helped with our monthly budget.",
+    quote:
+      "From reservation to turnover, Rish made everything easy. Paylite and flexible terms helped our budget. Satisfied client and happy homeowner.",
     clientName: "Hamana Homes buyer",
     unit: "Hamana Homes unit",
     location: "Magalang, Pampanga",

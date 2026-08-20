@@ -695,9 +695,45 @@ a {
   background: linear-gradient(180deg, #f0ebe3 0%, var(--color-bg) 100%);
 }
 
-.parent-company-body {
-  max-width: 720px;
-  margin: 0 auto;
+.parent-company-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 56px;
+  align-items: center;
+}
+
+.parent-company-image-wrap {
+  position: relative;
+}
+
+.parent-company-photo {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 3/2;
+  object-fit: cover;
+  border-radius: var(--radius-lg);
+  display: block;
+  box-shadow: var(--shadow-lg);
+}
+
+.parent-company-badge {
+  position: absolute;
+  bottom: -18px;
+  right: -12px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 20px;
+  background: var(--color-bg-card);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-md);
+  font-weight: 500;
+  font-size: 0.88rem;
+}
+
+.parent-company-logo {
+  height: 28px;
+  width: auto;
 }
 
 .parent-company-text {
@@ -710,15 +746,15 @@ a {
 .parent-company-stats {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 16px;
-  margin: 36px 0;
+  gap: 12px;
+  margin: 28px 0;
 }
 
 .parent-company-stat {
   background: var(--color-bg-card);
   border: 1px solid var(--color-border);
   border-radius: var(--radius);
-  padding: 20px 16px;
+  padding: 16px 12px;
   text-align: center;
   box-shadow: var(--shadow-sm);
 }
@@ -726,22 +762,21 @@ a {
 .parent-company-stat strong {
   display: block;
   font-family: var(--font-display);
-  font-size: 1.05rem;
+  font-size: 0.95rem;
   color: var(--color-text);
   margin-bottom: 6px;
   line-height: 1.3;
 }
 
 .parent-company-stat span {
-  font-size: 0.82rem;
+  font-size: 0.78rem;
   color: var(--color-text-muted);
 }
 
 .parent-company-brands {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 24px;
-  padding-top: 8px;
+  gap: 20px;
 }
 
 .parent-company-brand-group h3 {
@@ -754,6 +789,11 @@ a {
   font-size: 0.92rem;
   color: var(--color-text-muted);
   line-height: 1.65;
+}
+
+.parent-company-body {
+  max-width: 720px;
+  margin: 0 auto;
 }
 
 /* Amenities */
@@ -1468,14 +1508,6 @@ a {
   background: linear-gradient(180deg, var(--color-bg) 0%, #f0ebe3 100%);
 }
 
-.client-stories {
-  display: flex;
-  flex-direction: column;
-  gap: 48px;
-  max-width: 980px;
-  margin: 0 auto;
-}
-
 .client-stories-carousel {
   max-width: 980px;
   margin: 0 auto;
@@ -1494,8 +1526,8 @@ a {
 .client-story {
   flex: 0 0 100%;
   display: grid;
-  grid-template-columns: minmax(220px, 320px) 1fr;
-  gap: 40px;
+  grid-template-columns: minmax(240px, 320px) 1fr;
+  gap: 36px;
   align-items: center;
   padding: 28px;
   background: var(--color-bg-card);
@@ -1534,59 +1566,47 @@ a {
 }
 
 .client-story-frame {
-  position: relative;
-  width: 100%;
-  padding: 10px;
-  background: #fff;
-  border-radius: 4px;
-  box-shadow: 0 8px 24px rgba(26, 26, 46, 0.1);
-}
-
-.client-story-frame::before {
-  content: "";
-  position: absolute;
-  inset: 10px;
-  border: 1px solid rgba(26, 26, 46, 0.08);
-  border-radius: 2px;
-  pointer-events: none;
-  z-index: 2;
-}
-
-.client-story-frame-inner {
-  position: relative;
-  width: 100%;
+  aspect-ratio: 4/3;
   overflow: hidden;
-  border-radius: 2px;
-  line-height: 0;
+  border-radius: var(--radius);
+  background: var(--color-bg-dark);
+  box-shadow: var(--shadow-md);
 }
 
 .client-story-image {
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
   display: block;
-  object-fit: contain;
 }
 
 .client-story-content {
   min-width: 0;
 }
 
-.client-story-quote {
-  font-family: var(--font-display);
-  font-size: clamp(1.15rem, 2.2vw, 1.45rem);
-  font-style: italic;
-  line-height: 1.65;
-  color: var(--color-text);
-  margin-bottom: 24px;
+.client-story-header {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-bottom: 14px;
 }
 
-.client-story-quote::before {
-  content: '"';
-  color: var(--color-primary);
-  font-size: 2.5rem;
-  line-height: 0;
-  vertical-align: -0.35em;
-  margin-right: 4px;
+.client-story-header strong {
+  font-size: 1rem;
+  color: var(--color-text);
+}
+
+.client-story-header span {
+  font-size: 0.88rem;
+  color: var(--color-text-muted);
+}
+
+.client-story-quote {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: var(--color-text);
+  margin: 0 0 20px;
 }
 
 .client-story-meta {
@@ -1595,41 +1615,31 @@ a {
   gap: 8px;
 }
 
-.client-story-name {
-  font-size: 1.05rem;
+.client-story-unit {
+  font-size: 0.92rem;
+  font-weight: 600;
   color: var(--color-text);
 }
 
-.client-story-unit {
-  font-size: 0.92rem;
+.client-story-location {
+  font-size: 0.88rem;
   color: var(--color-text-muted);
 }
 
 .client-story-price {
   display: inline-flex;
-  align-items: center;
   width: fit-content;
-  margin-top: 4px;
   padding: 8px 14px;
   background: var(--color-bg-dark);
-  color: var(--color-text-light);
-  border-radius: 50px;
-  font-size: 0.88rem;
-  font-weight: 500;
-}
-
-.client-story-price em {
-  font-style: normal;
   color: var(--color-primary-light);
-  font-weight: 700;
-  margin-left: 4px;
+  border-radius: 50px;
+  font-size: 0.85rem;
+  font-weight: 600;
 }
 
 .client-story-rating {
   display: inline-flex;
-  align-items: center;
   width: fit-content;
-  margin-top: 8px;
   padding: 6px 12px;
   background: rgba(44, 95, 79, 0.12);
   color: var(--color-accent);
@@ -2039,7 +2049,8 @@ a.contact-link:hover {
 
 @media (max-width: 968px) {
   .about-grid,
-  .contact-grid {
+  .contact-grid,
+  .parent-company-grid {
     grid-template-columns: 1fr;
     gap: 48px;
   }
@@ -2049,7 +2060,16 @@ a.contact-link:hover {
     margin: 0 auto;
   }
 
+  .parent-company-image {
+    max-width: 480px;
+    margin: 0 auto;
+  }
+
   .about-badge {
+    right: 0;
+  }
+
+  .parent-company-badge {
     right: 0;
   }
 
@@ -2408,8 +2428,8 @@ a.contact-link:hover {
     gap: 20px;
   }
 
-  .video-blog-body {
-    padding: 18px 18px 22px;
+  .client-stories-carousel {
+    max-width: 100%;
   }
 
   .client-story {
@@ -2419,18 +2439,10 @@ a.contact-link:hover {
     align-items: start;
   }
 
-  .client-stories-dots {
-    margin-top: 20px;
-  }
-
   .client-story-photo {
-    max-width: 260px;
+    max-width: 320px;
     margin: 0 auto;
     width: 100%;
-  }
-
-  .client-story-frame {
-    padding: 8px;
   }
 
   .client-story-content {
@@ -2439,6 +2451,10 @@ a.contact-link:hover {
 
   .client-story-meta {
     align-items: center;
+  }
+
+  .video-blog-body {
+    padding: 18px 18px 22px;
   }
 
   .contact-form {

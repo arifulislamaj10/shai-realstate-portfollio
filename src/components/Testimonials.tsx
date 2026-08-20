@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import Reveal from "./Reveal";
-import { testimonials } from "@/data/site";
+import { siteConfig, testimonials } from "@/data/site";
 
 export default function Testimonials() {
   const [index, setIndex] = useState(0);
@@ -17,12 +17,12 @@ export default function Testimonials() {
   }, [total]);
 
   return (
-    <section className="testimonials section">
+    <section className="testimonials section" id="stories">
       <div className="container">
         <Reveal className="section-header">
           <span className="section-label">Client Stories</span>
-          <h2 className="section-title">Turnover Photos</h2>
-          <p className="section-desc">From buyers I have worked with</p>
+          <h2 className="section-title">Happy Homeowners</h2>
+          <p className="section-desc">Real turnover photos from buyers I worked with</p>
         </Reveal>
 
         <Reveal className="client-stories-carousel">
@@ -35,29 +35,27 @@ export default function Testimonials() {
                 <article key={item.unit} className="client-story">
                   <div className="client-story-photo">
                     <div className="client-story-frame">
-                      <div className="client-story-frame-inner">
-                        <Image
-                          src={item.image}
-                          alt={`${item.clientName}, ${item.unit}`}
-                          width={900}
-                          height={600}
-                          className="client-story-image"
-                          sizes="(max-width: 768px) 260px, 320px"
-                        />
-                      </div>
+                      <Image
+                        src={item.image}
+                        alt={`${item.clientName}, ${item.unit}`}
+                        width={640}
+                        height={480}
+                        className="client-story-image"
+                        sizes="(max-width: 768px) 100vw, 320px"
+                      />
                     </div>
                   </div>
 
                   <div className="client-story-content">
+                    <div className="client-story-header">
+                      <strong>{siteConfig.name}</strong>
+                      <span>{item.clientName}</span>
+                    </div>
                     <p className="client-story-quote">{item.quote}</p>
                     <div className="client-story-meta">
-                      <strong className="client-story-name">{item.clientName}</strong>
-                      <span className="client-story-unit">
-                        {item.unit}, {item.location}
-                      </span>
-                      <span className="client-story-price">
-                        Home price: <em>{item.price}</em>
-                      </span>
+                      <span className="client-story-unit">{item.unit}</span>
+                      <span className="client-story-location">{item.location}</span>
+                      <span className="client-story-price">{item.price}</span>
                       <span className="client-story-rating">Satisfied client</span>
                     </div>
                   </div>
