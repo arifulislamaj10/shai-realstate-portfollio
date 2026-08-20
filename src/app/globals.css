@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 /* ============================================
-   Shan Shai — Personal Brand Website
+   Rish — Personal Brand Website
    Real Estate Professional · Hamana · Philippines
    ============================================ */
 
@@ -563,8 +563,8 @@ a {
 .about-photo {
   width: 100%;
   height: auto;
-  aspect-ratio: 4/5;
-  object-fit: cover;
+  object-fit: contain;
+  object-position: top center;
   border-radius: var(--radius-lg);
   display: block;
   box-shadow: var(--shadow-lg);

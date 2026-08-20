@@ -50,7 +50,7 @@ export default function VideoBlog() {
         <Reveal className="video-blog-cta">
           <p>Have questions after watching? Send me a message.</p>
           <Link href="#contact" className="btn btn-primary">
-            Contact Shan
+            Contact {siteConfig.name}
           </Link>
           <p className="section-cta-note">
             Official reference:{" "}

@@ -18,10 +18,10 @@ export default function Portfolio() {
     <section className="portfolio section" id="portfolio">
       <div className="container">
         <Reveal className="section-header">
-          <span className="section-label">Featured Work</span>
-          <h2 className="section-title">Past Work</h2>
+          <span className="section-label">Success Stories</span>
+          <h2 className="section-title">Closed Deals</h2>
           <p className="section-desc">
-            The Hamana community and some units I&apos;ve sold
+            The Hamana community and 5 successful turnovers in the last 3 months
           </p>
         </Reveal>
 
@@ -64,7 +64,7 @@ export default function Portfolio() {
         <Reveal className="portfolio-cta">
           <p>Want pricing or a site visit? Message me.</p>
           <Link href="#contact" className="btn btn-primary">
-            Contact Shan
+            Contact {siteConfig.name}
           </Link>
           <p className="section-cta-note">
             Official reference:{" "}

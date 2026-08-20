@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import Reveal from "./Reveal";
-import { highlights, siteConfig, stats } from "@/data/site";
+import { aboutContent, highlights, siteConfig, stats } from "@/data/site";
 
 export default function About() {
   return (
@@ -13,37 +13,33 @@ export default function About() {
               <Image
                 src={siteConfig.profilePhoto}
                 alt={`${siteConfig.name}, ${siteConfig.title}`}
-                width={480}
-                height={600}
+                width={1033}
+                height={1600}
                 className="about-photo"
                 sizes="(max-width: 968px) 400px, 480px"
                 priority
               />
               <div className="about-badge">
-              <Image
-                src={siteConfig.hamanaLogo}
-                alt="Hamana Homes"
-                width={80}
-                height={30}
-                className="badge-logo"
-              />
-              <span>{siteConfig.company}</span>
+                <Image
+                  src={siteConfig.hamanaLogo}
+                  alt="Hamana Homes"
+                  width={80}
+                  height={30}
+                  className="badge-logo"
+                />
+                <span>{siteConfig.company}</span>
               </div>
             </div>
           </div>
 
           <Reveal className="about-content">
             <span className="section-label">About Me</span>
-            <h2 className="section-title">Shan Shai · Hamana Homes Agent</h2>
-            <p className="about-text">
-              Hi, I&apos;m <strong>Shan Shai</strong>. I&apos;m a licensed real estate agent for{" "}
-              <strong>Hamana Homes</strong> in <strong>Magalang, Pampanga</strong>, near Clark.
-            </p>
-            <p className="about-text">
-              So far I&apos;ve closed <strong>4 deals</strong>. I help buyers with site visits,
-              reservations, Pag-IBIG or bank loans, and turnover. Message me if you want to check
-              available units or schedule a visit.
-            </p>
+            <h2 className="section-title">{aboutContent.sectionTitle}</h2>
+            <p className="about-text">{aboutContent.intro}</p>
+            <p className="about-text">{aboutContent.trackRecord}</p>
+            <p className="about-text">{aboutContent.turnover}</p>
+            <p className="about-text">{aboutContent.virtualTripping}</p>
+            <p className="about-text">{aboutContent.payment}</p>
             <ul className="about-highlights">
               {highlights.map((item) => (
                 <li key={item}>

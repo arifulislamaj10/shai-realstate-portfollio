@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { useState } from "react";
 import Reveal from "./Reveal";
-import { faqItems } from "@/data/site";
+import { faqItems, siteConfig } from "@/data/site";
 
 export default function FAQ() {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
@@ -14,7 +14,7 @@ export default function FAQ() {
         <Reveal className="section-header">
           <span className="section-label">FAQ</span>
           <h2 className="section-title">Common Questions</h2>
-          <p className="section-desc">Quick answers — message Shan if you need more detail</p>
+          <p className="section-desc">Quick answers — message {siteConfig.name} if you need more detail</p>
         </Reveal>
 
         <div className="faq-list">
@@ -44,7 +44,7 @@ export default function FAQ() {
         <Reveal className="faq-footer">
           <p>Still have questions?</p>
           <Link href="#contact" className="btn btn-secondary">
-            Contact Shan
+            Contact {siteConfig.name}
           </Link>
         </Reveal>
       </div>

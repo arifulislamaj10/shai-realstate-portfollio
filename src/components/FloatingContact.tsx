@@ -12,7 +12,7 @@ export default function FloatingContact() {
           target="_blank"
           rel="noopener noreferrer"
           className="floating-contact-btn floating-contact-btn--whatsapp"
-          aria-label="Message Shan on WhatsApp"
+          aria-label={`Message ${siteConfig.name} on WhatsApp`}
           title="WhatsApp"
         >
           <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
@@ -25,7 +25,7 @@ export default function FloatingContact() {
         target="_blank"
         rel="noopener noreferrer"
         className="floating-contact-btn floating-contact-btn--facebook"
-        aria-label="Message Shan on Facebook"
+        aria-label={`Message ${siteConfig.name} on Facebook`}
         title="Facebook"
       >
         <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">

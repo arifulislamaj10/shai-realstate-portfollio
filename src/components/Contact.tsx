@@ -17,7 +17,7 @@ export default function Contact() {
 
     const unit = availableUnits.find((item) => item.id === unitId);
     if (unit) {
-      setMessage(`Hi Shan, I'm interested in the ${unit.name} (${unit.type}).`);
+      setMessage(`Hi ${siteConfig.name}, I'm interested in the ${unit.name} (${unit.type}).`);
     }
   }, []);
 
@@ -44,20 +44,20 @@ export default function Contact() {
         window.open(getWhatsAppUrl(text) || whatsappUrl, "_blank");
       } else {
         navigator.clipboard.writeText(text).then(() => {
-          alert("Message copied! Paste it when you message Shan on Facebook.");
+          alert(`Message copied! Paste it when you message ${siteConfig.name} on Facebook.`);
           window.open(siteConfig.facebook, "_blank");
         });
       }
     } else {
       const useFacebook = confirm(
-        "Your message is ready!\n\nClick OK to open Facebook and message Shan Shai.\n\nClick Cancel to copy your message details."
+        `Your message is ready!\n\nClick OK to open Facebook and message ${siteConfig.name}.\n\nClick Cancel to copy your message details.`
       );
 
       if (useFacebook) {
         window.open(siteConfig.facebook, "_blank");
       } else {
         navigator.clipboard.writeText(text).then(() => {
-          alert("Message copied! Paste it when you message Shan on Facebook.");
+          alert(`Message copied! Paste it when you message ${siteConfig.name} on Facebook.`);
           window.open(siteConfig.facebook, "_blank");
         });
       }
