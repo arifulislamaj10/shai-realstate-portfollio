@@ -312,7 +312,25 @@ export const videoBlogPosts = [
   },
 ];
 
-export const availableUnits = [
+export type UnitVariant = {
+  label?: string;
+  lotArea: string;
+  floorArea: string;
+};
+
+export type AvailableUnit = {
+  id: string;
+  name: string;
+  type: string;
+  beds: string;
+  priceNote: string;
+  image: string;
+  lotArea?: string;
+  floorArea?: string;
+  variants?: UnitVariant[];
+};
+
+export const availableUnits: AvailableUnit[] = [
   {
     id: "nanea",
     name: "Nanea",
