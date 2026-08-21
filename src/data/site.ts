@@ -26,28 +26,20 @@ export const siteConfig = {
 };
 
 export const heroContent = {
-  eyebrow: "Trusted In-House Agent, 30+ Families Helped",
-  headline: "Get Your Hamana Home with Someone You Can Trust",
+  eyebrow: "Hamana Homes, Magalang, Pampanga",
+  headline: "Get your Hamana Home Today",
   description:
-    "Hi, I'm Rish, in-house agent for Hamana Homes. I've guided 30+ families from first site visit to key turnover. I help with reservations, bank loans, Pag-IBIG, and the full process.",
+    "Hi, I'm Rish, in-house agent for Hamana Homes. I help with site visits, reservations, bank loans, and turnover.",
   primaryCta: { label: "Book a Site Visit", href: "#contact" },
   secondaryCta: { label: "See Client Turnovers", href: "#portfolio" },
 };
 
 export const aboutContent = {
-  sectionTitle: "Rish, Your Hamana Homes Agent",
+  sectionTitle: "Rish, Hamana Homes Agent",
   intro:
-    "Looking for a home in Magalang, Pampanga, near Clark? I'm Rish, an in-house real estate agent at Hamana Homes. I'm not a broker you have to chase. When you message me, you talk directly to the person who handles your reservation, financing, and turnover.",
+    "Looking for a home in Magalang, Pampanga, near Clark? I'm Rish, an in-house real estate agent at Hamana Homes, here to make your home buying easier from start to finish.",
   trackRecord:
-    "I've helped 30+ families get their Hamana home. Cash buyers, bank loans, Pag-IBIG, and OFWs abroad. I've done the full process many times, so I can guide you clearly and avoid the usual delays and confusion.",
-  whyChooseTitle: "Why Clients Choose Me",
-  whyChoose: [
-    "30+ families guided from reservation to key turnover",
-    "In-house agent with direct line, no middleman",
-    "Pag-IBIG, bank financing, and Paylite assistance",
-    "Virtual tripping for OFWs and buyers living far away",
-    "I stay with you until you get your keys",
-  ],
+    "I personally assist buyers with site visits, reservations, bank financing, and turnover, so you have someone to guide you every step of the way.",
   timelineTitle: "Choose a Home That Fits Your Timeline",
   timeline: [
     "RFO / Ready for Occupancy: Turnover in 2-3 months",
@@ -230,13 +222,12 @@ export const heroCarouselSlides = [
 ];
 
 export const stats = [
-  { number: "30+", label: "Families Helped" },
   { number: "4", label: "House Models" },
+  { number: "15", label: "Hectare Community" },
   { number: "₱25K", label: "Reservation Fee" },
 ];
 
 export const highlights = [
-  "30+ families assisted at Hamana Homes",
   "In-house Hamana Homes agent",
   "Nanea, Meana, Onea, and Kanea models",
   "Pag-IBIG and bank loan help",
@@ -458,17 +449,16 @@ export const faqItems = [
 
 export const portfolioContent = {
   label: "Client Turnovers",
-  title: "30+ Families. Real Turnovers.",
-  description:
-    "These are real key turnover moments at Hamana Homes. Proof that families trust me to get them home.",
-  cta: "Ready to be next? Message me for pricing or a free site visit.",
+  title: "Happy Homeowners",
+  description: "Real photos from key turnover ceremonies at Hamana Homes",
+  cta: "Want pricing or a site visit? Message me.",
 };
 
 export const testimonialsContent = {
   label: "Client Stories",
   title: "Happy Homeowners",
   description:
-    "Cash buyers, bank loans, Pag-IBIG, and OFWs. Different paths, same result. A Hamana home.",
+    "Real stories from Hamana Homes buyers",
 };
 
 export const portfolioItems = [
