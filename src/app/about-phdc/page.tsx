@@ -5,9 +5,9 @@ import Footer from "@/components/Footer";
 import Nav from "@/components/Nav";
 
 export const metadata: Metadata = {
-  title: "Parent Company | Rish | Hamana Homes",
+  title: "Hamana Homes | Rish | Magalang, Pampanga",
   description:
-    "About PHDC, Century Pacific Group, and Hamana Homes. Built by a trusted legacy, designed for the future.",
+    "Hamana Homes is the flagship residential project of PHDC under Century Pacific Group. Built by a trusted legacy, designed for the future.",
 };
 
 export default function AboutPhdcPage() {
