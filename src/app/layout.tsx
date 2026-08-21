@@ -13,7 +13,7 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   title: "Rish | Hamana Homes Agent, Magalang, Pampanga",
   description:
-    "Rish, in-house agent for Hamana Homes near Clark. 5 deals in 3 months. Site visits, reservations, bank loans, and turnover.",
+    "Rish, in-house agent for Hamana Homes near Clark. 30+ families helped from site visit to key turnover.",
   keywords: [
     "Rish",
     "Hamana Homes",

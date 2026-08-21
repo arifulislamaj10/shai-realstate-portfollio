@@ -9,7 +9,10 @@ export default function SiteVisitCta() {
         <Reveal className="site-visit-cta-inner">
           <div className="site-visit-cta-text">
             <h2>Free site visit at Hamana Homes</h2>
-            <p>See the units in Magalang, near Clark. Virtual tripping also available. Message {siteConfig.name} to schedule.</p>
+            <p>
+              See the units in Magalang, near Clark. Virtual tripping also available.
+              Join 30+ families who trusted {siteConfig.name}. Message me to schedule.
+            </p>
           </div>
           <Link href="#contact" className="btn btn-primary site-visit-cta-btn">
             Book a Site Visit

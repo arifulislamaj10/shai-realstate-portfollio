@@ -26,23 +26,31 @@ export const siteConfig = {
 };
 
 export const heroContent = {
-  eyebrow: "Hamana Homes, Magalang, Pampanga",
-  headline: "Get your Hamana Home Today",
+  eyebrow: "Trusted In-House Agent, 30+ Families Helped",
+  headline: "Get Your Hamana Home with Someone You Can Trust",
   description:
-    "Hi, I'm Rish, in-house agent for Hamana Homes. I closed 5 Meana duplex deals in 3 months. I help with site visits, reservations, bank loans, and turnover.",
+    "Hi, I'm Rish, in-house agent for Hamana Homes. I've guided 30+ families from first site visit to key turnover. I help with reservations, bank loans, Pag-IBIG, and the full process.",
   primaryCta: { label: "Book a Site Visit", href: "#contact" },
-  secondaryCta: { label: "See Closed Deals", href: "#portfolio" },
+  secondaryCta: { label: "See Client Turnovers", href: "#portfolio" },
 };
 
 export const aboutContent = {
-  sectionTitle: "Rish, Hamana Homes Agent",
+  sectionTitle: "Rish, Your Hamana Homes Agent",
   intro:
-    "Looking for a home in Magalang, Pampanga, near Clark? I'm Rish, an in-house real estate agent at Hamana Homes, here to make your home-buying journey easier from start to finish.",
+    "Looking for a home in Magalang, Pampanga, near Clark? I'm Rish, an in-house real estate agent at Hamana Homes. I'm not a broker you have to chase. When you message me, you talk directly to the person who handles your reservation, financing, and turnover.",
   trackRecord:
-    "With 5 Meana duplex deals closed in just 3 months, I personally assist buyers with site visits, reservations, bank financing, and turnover, so you have someone to guide you every step of the way.",
+    "I've helped 30+ families get their Hamana home. Cash buyers, bank loans, Pag-IBIG, and OFWs abroad. I've done the full process many times, so I can guide you clearly and avoid the usual delays and confusion.",
+  whyChooseTitle: "Why Clients Choose Me",
+  whyChoose: [
+    "30+ families guided from reservation to key turnover",
+    "In-house agent with direct line, no middleman",
+    "Pag-IBIG, bank financing, and Paylite assistance",
+    "Virtual tripping for OFWs and buyers living far away",
+    "I stay with you until you get your keys",
+  ],
   timelineTitle: "Choose a Home That Fits Your Timeline",
   timeline: [
-    "RFO / Ready for Occupancy: Turnover in 2–3 months",
+    "RFO / Ready for Occupancy: Turnover in 2-3 months",
     "Near-Ready Units: Turnover in around 6 months",
     "Regular Units: Turnover in around 12 months",
   ],
@@ -51,7 +59,7 @@ export const aboutContent = {
     "Enjoy flexible payment terms and Paylite options designed to make your monthly payments more manageable.",
   ofwTitle: "For OFWs & Buyers Living Far Away",
   virtualTripping:
-    "You don't have to be in Pampanga to start your home-buying journey. We offer online presentations and virtual tripping, allowing you to explore available homes from wherever you are.",
+    "You don't have to be in Pampanga to start buying a home. We offer online presentations and virtual tripping so you can explore available units from wherever you are.",
 };
 
 export const aboutPhdcContent = {
@@ -222,14 +230,14 @@ export const heroCarouselSlides = [
 ];
 
 export const stats = [
-  { number: "5", label: "Meana Units Closed" },
-  { number: "5", label: "Happy Clients" },
-  { number: "3", label: "Months" },
+  { number: "30+", label: "Families Helped" },
+  { number: "4", label: "House Models" },
+  { number: "₱25K", label: "Reservation Fee" },
 ];
 
 export const highlights = [
+  "30+ families assisted at Hamana Homes",
   "In-house Hamana Homes agent",
-  "5 Meana duplex deals closed in 3 months",
   "Nanea, Meana, Onea, and Kanea models",
   "Pag-IBIG and bank loan help",
   "Virtual tripping for OFWs",
@@ -448,6 +456,21 @@ export const faqItems = [
   },
 ];
 
+export const portfolioContent = {
+  label: "Client Turnovers",
+  title: "30+ Families. Real Turnovers.",
+  description:
+    "These are real key turnover moments at Hamana Homes. Proof that families trust me to get them home.",
+  cta: "Ready to be next? Message me for pricing or a free site visit.",
+};
+
+export const testimonialsContent = {
+  label: "Client Stories",
+  title: "Happy Homeowners",
+  description:
+    "Cash buyers, bank loans, Pag-IBIG, and OFWs. Different paths, same result. A Hamana home.",
+};
+
 export const portfolioItems = [
   {
     id: "hamana-master",
@@ -461,49 +484,57 @@ export const portfolioItems = [
   {
     id: "deal-1",
     name: "Meana Duplex",
-    category: "closed-deals",
-    tag: "Meana Turnover",
+    category: "client-turnovers",
+    tag: "Key Turnover",
     location: "Magalang, Pampanga",
     image: "/images/deal-1.jpeg",
   },
   {
     id: "deal-2",
     name: "Meana Duplex",
-    category: "closed-deals",
-    tag: "Meana Turnover",
+    category: "client-turnovers",
+    tag: "Key Turnover",
     location: "Magalang, Pampanga",
     image: "/images/deal-2.jpeg",
   },
   {
     id: "deal-3",
     name: "Meana Duplex",
-    category: "closed-deals",
-    tag: "Meana Turnover",
+    category: "client-turnovers",
+    tag: "Key Turnover",
     location: "Magalang, Pampanga",
     image: "/images/deal-3.jpeg",
   },
   {
     id: "deal-4",
     name: "Meana Duplex",
-    category: "closed-deals",
-    tag: "Meana Turnover",
+    category: "client-turnovers",
+    tag: "Key Turnover",
     location: "Magalang, Pampanga",
     image: "/images/deal-4.jpeg",
   },
   {
     id: "deal-5",
     name: "Meana Duplex",
-    category: "closed-deals",
-    tag: "Meana Turnover",
+    category: "client-turnovers",
+    tag: "Key Turnover",
     location: "Magalang, Pampanga",
     image: "/images/deal-5.jpeg",
+  },
+  {
+    id: "deal-6",
+    name: "Meana Duplex",
+    category: "client-turnovers",
+    tag: "Key Turnover",
+    location: "Magalang, Pampanga",
+    image: "/images/deal-6.jpeg",
   },
 ];
 
 export const portfolioFilters = [
   { id: "all", label: "All" },
   { id: "community", label: "Community" },
-  { id: "closed-deals", label: "Closed Deals" },
+  { id: "client-turnovers", label: "Client Turnovers" },
 ];
 
 export const testimonials = [
@@ -556,6 +587,16 @@ export const testimonials = [
     location: "Magalang, Pampanga",
     price: "Cash purchase",
     image: "/images/deal-5.jpeg",
+  },
+  {
+    id: "client-6",
+    quote:
+      "Rish made our home buying experience smooth from reservation to key turnover. Very satisfied with our Meana unit in Magalang.",
+    clientName: "Happy homeowner",
+    unit: "Meana Duplex",
+    location: "Magalang, Pampanga",
+    price: "₱4.6M to ₱5.3M",
+    image: "/images/deal-6.jpeg",
   },
 ];
 

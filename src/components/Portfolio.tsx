@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import Reveal from "./Reveal";
-import { portfolioFilters, portfolioItems, siteConfig } from "@/data/site";
+import { portfolioContent, portfolioFilters, portfolioItems, siteConfig } from "@/data/site";
 
 export default function Portfolio() {
   const [filter, setFilter] = useState("all");
@@ -18,11 +18,9 @@ export default function Portfolio() {
     <section className="portfolio section" id="portfolio">
       <div className="container">
         <Reveal className="section-header">
-          <span className="section-label">Closed Deals</span>
-          <h2 className="section-title">Recent Turnovers</h2>
-          <p className="section-desc">
-            Five Meana duplex turnovers in the last 3 months
-          </p>
+          <span className="section-label">{portfolioContent.label}</span>
+          <h2 className="section-title">{portfolioContent.title}</h2>
+          <p className="section-desc">{portfolioContent.description}</p>
         </Reveal>
 
         <Reveal className="portfolio-filters">
@@ -62,7 +60,7 @@ export default function Portfolio() {
         </div>
 
         <Reveal className="portfolio-cta">
-          <p>Want pricing or a site visit? Message me.</p>
+          <p>{portfolioContent.cta}</p>
           <Link href="#contact" className="btn btn-primary">
             Contact {siteConfig.name}
           </Link>

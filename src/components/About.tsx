@@ -38,6 +38,16 @@ export default function About() {
             <p className="about-text">{aboutContent.intro}</p>
             <p className="about-text">{aboutContent.trackRecord}</p>
 
+            <h3 className="about-subheading">{aboutContent.whyChooseTitle}</h3>
+            <ul className="about-highlights">
+              {aboutContent.whyChoose.map((item) => (
+                <li key={item}>
+                  <span className="highlight-icon">✓</span>
+                  {item}
+                </li>
+              ))}
+            </ul>
+
             <h3 className="about-subheading">{aboutContent.timelineTitle}</h3>
             <ul className="about-highlights">
               {aboutContent.timeline.map((item) => (

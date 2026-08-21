@@ -37,13 +37,13 @@ export default function AvailableUnits() {
                       ? unit.variants.map((variant) => (
                           <li key={`${variant.label ?? variant.lotArea}-${variant.floorArea}`}>
                             {variant.label ? `${variant.label}: ` : ""}
-                            {variant.lotArea} lot · {variant.floorArea} floor
+                            {variant.lotArea} lot, {variant.floorArea} floor
                           </li>
                         ))
                       : unit.lotArea && unit.floorArea
                         ? (
                             <li>
-                              {unit.lotArea} lot · {unit.floorArea} floor
+                              {unit.lotArea} lot, {unit.floorArea} floor
                             </li>
                           )
                         : null}

@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import Reveal from "./Reveal";
-import { testimonials } from "@/data/site";
+import { testimonials, testimonialsContent } from "@/data/site";
 
 export default function Testimonials() {
   const [index, setIndex] = useState(0);
@@ -20,11 +20,9 @@ export default function Testimonials() {
     <section className="testimonials section" id="stories">
       <div className="container">
         <Reveal className="section-header">
-          <span className="section-label">Client Stories</span>
-          <h2 className="section-title">Happy Homeowners</h2>
-          <p className="section-desc">
-            Five different clients. All purchased Meana units.
-          </p>
+          <span className="section-label">{testimonialsContent.label}</span>
+          <h2 className="section-title">{testimonialsContent.title}</h2>
+          <p className="section-desc">{testimonialsContent.description}</p>
         </Reveal>
 
         <Reveal className="client-stories-carousel">
