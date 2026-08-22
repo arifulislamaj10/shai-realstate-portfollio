@@ -69,7 +69,7 @@ export const aboutPhdcContent = {
         "Hamana Homes is the flagship residential project of PHDC, a developer under the Century Pacific Group Inc., a company owned by the Po family.",
         "The Po family is behind some of the Philippines' well-known brands, including Century Tuna, Birch Tree, Shakey's, Peri-Peri, and Potato Corner, and more. With a strong heritage in building trusted businesses, Century Pacific Group brings the same commitment to quality, value, and long-term growth to the communities it helps build.",
         "Hamana Homes is a 15-hectare modern Asian-inspired residential community designed to provide families with a comfortable, meaningful, and future-ready place to call home.",
-        "The name Hamana is a coined word inspired by the idea of \"homes that will stand the test of time.\"",
+        'The name Hamana is a coined word inspired by the idea of "homes that will stand the test of time."',
       ],
       images: [
         {
@@ -99,7 +99,8 @@ export const locationContent = {
   title: "Strategic Location",
   intro:
     "Near Clark, along Magalang-Mabalacat Highway in Magalang, Pampanga. Easy access to NLEX, SCTEX, Clark airport, schools, malls, and work areas.",
-  address: "Mabalacat-Magalang Road, Santo Rosario and San Isidro, Magalang, Pampanga 2011",
+  address:
+    "Mabalacat-Magalang Road, Santo Rosario and San Isidro, Magalang, Pampanga 2011",
   googleMapsUrl: "https://maps.app.goo.gl/rHCyo5x9PGMRCgw38",
   banner: {
     src: "/images/location/location-banner.jpg",
@@ -117,12 +118,14 @@ export const locationContent = {
     },
     {
       name: "SCTEX",
-      description: "Highway to other northern towns and provinces, 18.4 km away.",
+      description:
+        "Highway to other northern towns and provinces, 18.4 km away.",
       image: "/images/location/sctex.jpg",
     },
     {
       name: "Clark International Airport",
-      description: "Gateway to domestic and international flights, 10.7 km away.",
+      description:
+        "Gateway to domestic and international flights, 10.7 km away.",
       image: "/images/location/clark-airport.jpg",
     },
     {
@@ -142,17 +145,20 @@ export const amenitiesContent = {
   items: [
     {
       name: "24-Hour Security Guardhouse",
-      description: "Exclusive gated community with 24/7 security for peace and order.",
+      description:
+        "Exclusive gated community with 24/7 security for peace and order.",
       image: "/images/amenities/guardhouse.jpg",
     },
     {
       name: "The Clubhouse",
-      description: "A relaxing space for community events or small family get-togethers.",
+      description:
+        "A relaxing space for community events or small family get-togethers.",
       image: "/images/amenities/clubhouse.jpg",
     },
     {
       name: "Leisure Pool and Village Pavilion",
-      description: "Lounge by the pool or celebrate special events in the village pavilion.",
+      description:
+        "Lounge by the pool or celebrate special events in the village pavilion.",
       image: "/images/amenities/swimming-pool.jpg",
     },
     {
@@ -177,12 +183,14 @@ export const amenitiesContent = {
     },
     {
       name: "Retail Store",
-      description: "Commercial retail spaces for everyday shopping inside the community.",
+      description:
+        "Commercial retail spaces for everyday shopping inside the community.",
       image: "/images/amenities/retail-store.jpg",
     },
     {
       name: "Hamana Mall",
-      description: "H Mall Magalang with shops and dining for residents and nearby areas.",
+      description:
+        "H Mall Magalang with shops and dining for residents and nearby areas.",
       image: "/images/amenities/hamana-mall.jpg",
     },
   ],
@@ -210,11 +218,31 @@ export const sampleComputationContent = {
 };
 
 export const heroCarouselSlides = [
-  { image: "/images/hamana-hero.jpg", title: "Hamana Homes Magalang", subtitle: "Magalang, Pampanga" },
-  { image: "/images/hamana-banner2.jpg", title: "Hamana Community", subtitle: "Near Clark" },
-  { image: "/images/hamana-banner3.jpg", title: "15 Hectare Project", subtitle: "Hamana Homes" },
-  { image: "/images/hamana-banner4.jpg", title: "Pacifica Homes", subtitle: "Magalang" },
-  { image: "/images/hamana-banner5.jpg", title: "Hamana Homes", subtitle: "Pampanga" },
+  {
+    image: "/images/hamana-hero.jpg",
+    title: "Hamana Homes Magalang",
+    subtitle: "Magalang, Pampanga",
+  },
+  {
+    image: "/images/hamana-banner2.jpg",
+    title: "Hamana Community",
+    subtitle: "Near Clark",
+  },
+  {
+    image: "/images/hamana-banner3.jpg",
+    title: "15 Hectare Project",
+    subtitle: "Hamana Homes",
+  },
+  {
+    image: "/images/hamana-banner4.jpg",
+    title: "Pacifica Homes",
+    subtitle: "Magalang",
+  },
+  {
+    image: "/images/hamana-banner5.jpg",
+    title: "Hamana Homes",
+    subtitle: "Pampanga",
+  },
   { image: "/images/nanea.jpg", title: "Nanea", subtitle: "Single Attached" },
   { image: "/images/meana.jpg", title: "Meana", subtitle: "Duplex" },
   { image: "/images/onea.jpg", title: "Onea", subtitle: "Duplex Deluxe" },
@@ -277,14 +305,16 @@ export const videoBlogPosts = [
   {
     id: "hamana-main-avp",
     title: "Hamana Homes Site Tour",
-    description: "Official video tour of the Hamana Homes site in Magalang, near Clark.",
+    description:
+      "Official video tour of the Hamana Homes site in Magalang, near Clark.",
     youtubeId: "DyLMDfhBsto",
     tag: "Site Tour",
   },
   {
     id: "hamana-phase-1",
     title: "Phase 1 Development",
-    description: "Video walkthrough of Phase 1. Buildings, roads, and project layout.",
+    description:
+      "Video walkthrough of Phase 1. Buildings, roads, and project layout.",
     youtubeId: "ND7H4XUW4-M",
     startAt: 119,
     tag: "Development",
@@ -374,39 +404,46 @@ export const howToBuySteps = [
   {
     step: "1",
     title: "Message Rish",
-    description: "Send a message on Facebook or WhatsApp. Say which unit you like or ask what is available.",
+    description:
+      "Send a message on Facebook or WhatsApp. Say which unit you like or ask what is available.",
   },
   {
     step: "2",
     title: "Site visit",
-    description: "Schedule a trip to Hamana Homes Magalang, or a virtual tripping session if you are abroad.",
+    description:
+      "Schedule a trip to Hamana Homes Magalang, or a virtual tripping session if you are abroad.",
   },
   {
     step: "3",
     title: "Choose your unit",
-    description: "Pick the model that fits your budget. I will explain floor plan, price, and payment options.",
+    description:
+      "Pick the model that fits your budget. I will explain floor plan, price, and payment options.",
   },
   {
     step: "4",
     title: "Reserve",
-    description: "Submit requirements and the ₱25,000 reservation fee. I will guide you with the paperwork.",
+    description:
+      "Submit requirements and the ₱25,000 reservation fee. I will guide you with the paperwork.",
   },
   {
     step: "5",
     title: "Loan processing",
-    description: "Pag-IBIG or bank financing. I can help compute monthly payment and assist with documents.",
+    description:
+      "Pag-IBIG or bank financing. I can help compute monthly payment and assist with documents.",
   },
   {
     step: "6",
     title: "Turnover",
-    description: "RFO in 2 to 3 months, near ready in 6 months, regular in 12 months. I stay with you until you get your keys.",
+    description:
+      "RFO in 2 to 3 months, near ready in 6 months, regular in 12 months. I stay with you until you get your keys.",
   },
 ];
 
 export const faqItems = [
   {
     question: "How much is the reservation fee?",
-    answer: "Reservation fee is ₱25,000. Message me for the down payment based on the unit you choose.",
+    answer:
+      "Reservation fee is ₱25,000. Message me for the down payment based on the unit you choose.",
   },
   {
     question: "How long until turnover?",
@@ -423,15 +460,18 @@ export const faqItems = [
   },
   {
     question: "Do you offer virtual tripping?",
-    answer: "Yes. We do online presentation or virtual tripping for OFWs and buyers who cannot visit yet.",
+    answer:
+      "Yes. We do online presentation or virtual tripping for OFWs and buyers who cannot visit yet.",
   },
   {
     question: "How do I reserve a unit?",
-    answer: "Message me first. I will send the requirements, reservation fee, and next steps.",
+    answer:
+      "Message me first. I will send the requirements, reservation fee, and next steps.",
   },
   {
     question: "I'm an OFW. Can I buy while I'm abroad?",
-    answer: "Yes. Many OFW clients work with me remotely through virtual tripping.",
+    answer:
+      "Yes. Many OFW clients work with me remotely through virtual tripping.",
   },
   {
     question: "Where is Hamana Homes located?",
@@ -439,11 +479,13 @@ export const faqItems = [
   },
   {
     question: "What payment terms are available?",
-    answer: "Flexible payment terms and Paylite are available. Message me to compute what fits your budget.",
+    answer:
+      "Flexible payment terms and Paylite are available. Message me to compute what fits your budget.",
   },
   {
     question: "Are there still available units?",
-    answer: "Availability changes often. Message me for current units, pricing, and promos.",
+    answer:
+      "Availability changes often. Message me for current units, pricing, and promos.",
   },
 ];
 
@@ -457,8 +499,7 @@ export const portfolioContent = {
 export const testimonialsContent = {
   label: "Client Stories",
   title: "Happy Homeowners",
-  description:
-    "Real stories from Hamana Homes buyers",
+  description: "Real stories from Hamana Homes buyers",
 };
 
 export const portfolioItems = [
@@ -593,12 +634,15 @@ export const testimonials = [
 export const navLinks = [
   { href: "/#home", label: "Home" },
   { href: "/#about", label: "About" },
-  { href: "/about-phdc", label: "Hamana Homes" },
+
   { href: "/#services", label: "Services" },
-  { href: "/#units", label: "Units" },
-  { href: "/#location", label: "Location" },
-  { href: "/#amenities", label: "Amenities" },
   { href: "/#portfolio", label: "Portfolio" },
+  { href: "/about-phdc", label: "Hamana Homes" },
+  { href: "/#location", label: "Location" },
+  { href: "/#units", label: "Units" },
+
+  { href: "/#amenities", label: "Amenities" },
+
   { href: "/#videos", label: "Videos" },
   { href: "/#faq", label: "FAQ" },
   { href: "/#contact", label: "Contact" },
@@ -616,7 +660,9 @@ export function getWhatsAppDigits(): string {
   return digits;
 }
 
-export function getWhatsAppUrl(message = defaultWhatsAppMessage): string | null {
+export function getWhatsAppUrl(
+  message = defaultWhatsAppMessage,
+): string | null {
   const digits = getWhatsAppDigits();
   if (!digits) return null;
   return `https://wa.me/${digits}?text=${encodeURIComponent(message)}`;
